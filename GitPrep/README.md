@@ -6,12 +6,12 @@ An application to delete unneccessary files from a local Git directory.
 
 This version was created with Visual Studion 2017.  It was compiled with the following properties:
 
-  o Windows SDK Version: 10.0.18362.0
-  o Platform Toolset: visual Studio 2017 (v141)
-  o MFC: Use MFC in a Shared DLL
-  o Character Set:  Use Unicode Character Set
-  o Precompiled Header:  Not Using Precompiled Headers
-  o Linker/Additional Dependencies:  Htmlhelp.lib, OpenSSL.3.1\libssl.lib, OpenSSL.3.1\libcrypto.lib
+  - Windows SDK Version: 10.0.18362.0
+  - Platform Toolset: visual Studio 2017 (v141)
+  - MFC: Use MFC in a Shared DLL
+  - Character Set:  Use Unicode Character Set
+  - Precompiled Header:  Not Using Precompiled Headers
+  - Linker/Additional Dependencies:  Htmlhelp.lib, OpenSSL.3.1\libssl.lib, OpenSSL.3.1\libcrypto.lib
 
 The HTML Help Workshop (HHW), Version 4.74.8702.0 was used to prepare the help file (WixApp.chm).  It is
 copied into the Release directory.  I used Dreamweaver (DW) to do most of the content production of the
