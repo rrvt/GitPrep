@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GitPrepHelp", "..\GitPrep.hlp\GitPrepHelp.vcxproj", "{5515954D-D087-4958-9C5A-999A69F1CF1C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GitPrep", "..\GitPrep.prj\GitPrep.vcxproj", "{303B4455-0A03-4DEC-BDE3-1162734DE4D6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5515954D-D087-4958-9C5A-999A69F1CF1C} = {5515954D-D087-4958-9C5A-999A69F1CF1C}
+		{CF57F3EC-D3DB-4469-8519-3F9D73785D9B} = {CF57F3EC-D3DB-4469-8519-3F9D73785D9B}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Library", "..\..\Library\Library.prj\Library.vcxproj", "{CF57F3EC-D3DB-4469-8519-3F9D73785D9B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5515954D-D087-4958-9C5A-999A69F1CF1C} = {5515954D-D087-4958-9C5A-999A69F1CF1C}
+	EndProjectSection
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Installer", "..\Installer\Installer.wixproj", "{CAA182C9-0451-46E8-A2A1-170C296B539A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5515954D-D087-4958-9C5A-999A69F1CF1C} = {5515954D-D087-4958-9C5A-999A69F1CF1C}
+		{303B4455-0A03-4DEC-BDE3-1162734DE4D6} = {303B4455-0A03-4DEC-BDE3-1162734DE4D6}
+		{CF57F3EC-D3DB-4469-8519-3F9D73785D9B} = {CF57F3EC-D3DB-4469-8519-3F9D73785D9B}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5515954D-D087-4958-9C5A-999A69F1CF1C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5515954D-D087-4958-9C5A-999A69F1CF1C}.Debug|Win32.Build.0 = Debug|Win32
+		{5515954D-D087-4958-9C5A-999A69F1CF1C}.Release|Win32.ActiveCfg = Release|Win32
+		{5515954D-D087-4958-9C5A-999A69F1CF1C}.Release|Win32.Build.0 = Release|Win32
+		{303B4455-0A03-4DEC-BDE3-1162734DE4D6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{303B4455-0A03-4DEC-BDE3-1162734DE4D6}.Debug|Win32.Build.0 = Debug|Win32
+		{303B4455-0A03-4DEC-BDE3-1162734DE4D6}.Release|Win32.ActiveCfg = Release|Win32
+		{303B4455-0A03-4DEC-BDE3-1162734DE4D6}.Release|Win32.Build.0 = Release|Win32
+		{CF57F3EC-D3DB-4469-8519-3F9D73785D9B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CF57F3EC-D3DB-4469-8519-3F9D73785D9B}.Debug|Win32.Build.0 = Debug|Win32
+		{CF57F3EC-D3DB-4469-8519-3F9D73785D9B}.Release|Win32.ActiveCfg = Release|Win32
+		{CF57F3EC-D3DB-4469-8519-3F9D73785D9B}.Release|Win32.Build.0 = Release|Win32
+		{CAA182C9-0451-46E8-A2A1-170C296B539A}.Debug|Win32.ActiveCfg = Debug|x86
+		{CAA182C9-0451-46E8-A2A1-170C296B539A}.Release|Win32.ActiveCfg = Release|x86
+		{CAA182C9-0451-46E8-A2A1-170C296B539A}.Release|Win32.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DBD94DE0-3E35-40FB-B6AE-F0E03C972EB5}
+	EndGlobalSection
+EndGlobal
