@@ -41,6 +41,16 @@ directory as the directory to process.  Use the appropriate commands to delete e
 directories.  Compile the resulting projects just as one would do in their home directories.  This
 will demonstrate that the upload will work.  Start over to upload to Git.
 
+## Update
+
+### Update 12/18/21
+
+While creating a template for a dialog box only application with a toolbar the Library was added to and
+changed to hopefully simplify toolbar creation.  This version of the toolbar includes buttons, edit boxes,
+combo boxes and drop down menus as well as the traditional 16x15 icons.
+
+GitPrep is a tradional App, has a traditional 16x15 pixel icon toolbar.
+
 ## Authors
 
 Robert R. Van Tuyl

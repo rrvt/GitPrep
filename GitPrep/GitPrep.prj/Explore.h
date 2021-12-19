@@ -33,7 +33,7 @@ private:
 
 
 class Explore;
-typedef RcdPtrT<ExplDsc> ExplDscP;
+typedef DatumPtrT<ExplDsc> ExplDscP;
 typedef IterT<Explore, ExplDsc> ExplIter;
 
 

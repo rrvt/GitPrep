@@ -5,8 +5,6 @@
 #include "CDoc.h"
 #include "Explore.h"
 #include "MainFrame.h"
-#include "TBComboBox.h"
-#include "TBEditBox.h"
 
 
 enum DataSource {NotePadSrc};
@@ -66,21 +64,4 @@ public:
 
 
 
-#ifdef Examples
-  afx_msg void OnTest();
-  afx_msg void displayDataStore();
-  afx_msg void myButton();
-
-  afx_msg void OnComboBoxChng();
-
-  afx_msg void OnTBEditBox();
-  afx_msg void myButton1();
-  afx_msg void onOption1();
-  afx_msg void onOption2();
-  afx_msg void onOption3();
-  afx_msg void onOption21();
-  afx_msg void onOption22();
-  afx_msg void onOption23();
-  afx_msg void OnTestEditBoxes();
-#endif
 

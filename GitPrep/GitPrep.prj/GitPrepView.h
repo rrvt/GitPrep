@@ -4,9 +4,6 @@
 #pragma once
 #include "CScrView.h"
 #include "NotePadRpt.h"
-#ifdef Examples
-#include "StoreRpt.h"
-#endif
 
 
 class GitPrepDoc;
@@ -16,10 +13,6 @@ class GitPrepView : public CScrView {
 
 NotePadRpt dspNote;
 NotePadRpt prtNote;
-#ifdef Examples
-StoreRpt   dspStore;
-StoreRpt   prtStore;
-#endif
 
 protected: // create from serialization only
 

@@ -17,11 +17,7 @@ BEGIN_MESSAGE_MAP(GitPrepView, CScrView)
 END_MESSAGE_MAP()
 
 
-GitPrepView::GitPrepView() noexcept :
-                                    #ifdef Examples
-                                      dspStore(dMgr.getNotePad()), prtStore(pMgr.getNotePad()),
-                                    #endif
-                                    dspNote( dMgr.getNotePad()), prtNote( pMgr.getNotePad()) {
+GitPrepView::GitPrepView() noexcept : dspNote( dMgr.getNotePad()), prtNote( pMgr.getNotePad()) {
 ResourceData res;
 String       pn;
   if (res.getProductName(pn)) prtNote.setTitle(pn);
@@ -53,17 +49,11 @@ DataSource ds = doc()->dataSrc();
   if (printing)
     switch(ds) {
       case NotePadSrc : prtNote.print(*this);  break;
-#ifdef Examples
-      case StoreSrc   : prtStore.print(*this); break;
-#endif
       }
 
   else
     switch(ds) {
       case NotePadSrc : dspNote.display(*this);  break;
-#ifdef Examples
-      case StoreSrc   : dspStore.display(*this); break;
-#endif
       }
 
 
@@ -87,9 +77,6 @@ void GitPrepView::OnBeginPrinting(CDC* pDC, CPrintInfo* pInfo) {
 void GitPrepView::printFooter(Device& dev, int pageNo) {
   switch(doc()->dataSrc()) {
     case NotePadSrc : prtNote.footer(dev, pageNo);  break;
-#ifdef Examples
-    case StoreSrc   : prtStore.footer(dev, pageNo); break;
-#endif
     }
   }
 
