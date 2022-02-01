@@ -66,6 +66,8 @@
       <BasicRuntimeChecks />
       <WholeProgramOptimization>true</WholeProgramOptimization>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <SupportJustMyCode>false</SupportJustMyCode>
     </ClCompile>
@@ -104,6 +106,8 @@
       <DebugInformationFormat>None</DebugInformationFormat>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <BasicRuntimeChecks />
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -153,7 +157,9 @@
     <ClCompile Include="Store.cpp" />
     <ClCompile Include="StoreRpt.cpp" />
   </ItemGroup>
-  <ItemGroup><ResourceCompile Include="GitPrep.rc" /></ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GitPrep.rc" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="..\..\Library\Extras\AboutDlg.rc2" />
     <None Include="res\GitPrep.rc2" />
@@ -162,7 +168,9 @@
     <None Include="res\Toolbar03.bmp" />
     <None Include="C:\Users\rrvt\AppData\Roaming\GitPrep\GitPrep.ini" />
   </ItemGroup>
-  <ItemGroup><Image Include="res\GitPrep.ico" /></ItemGroup>
+  <ItemGroup>
+    <Image Include="res\GitPrep.ico" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Library\Library.prj\Library.vcxproj">
       <Project>{1D9DE229-5257-4E1E-9A95-08EDDFE37B9B}</Project>
