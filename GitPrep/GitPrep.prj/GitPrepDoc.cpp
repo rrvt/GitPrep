@@ -104,11 +104,13 @@ void GitPrepDoc::onFileSave() {
 
   if (!iniFile.readString(Section, LastSavedFile, path)) path = _T("GitPrepList");
 
-  pathDlgDsc = PathDlgDsc(_T("Git Prep List"), path, _T("txt"), _T("*.txt"));
+  pathDlgDsc(_T("Git Prep List"), path, _T("txt"), _T("*.txt"));
 
   setSaveAsPath(pathDlgDsc); OnSaveDocument(path);
 
-  iniFile.writeString(Section, LastSavedFile, ::getPath(path));
+  String pth = ::getPath(path);
+
+  iniFile.writeString(Section, LastSavedFile, pth);
   }
 
 
