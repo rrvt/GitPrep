@@ -66,6 +66,7 @@ private:
   bool   isDeletableDir( String& name);
   bool   isExplorableDir(String& name);
   bool   isDeletableFile(String& ext);
+  bool   isBackupFile(String& name, String& ext);
   int    getSize(String& path);
   String dspSize(int size);
 

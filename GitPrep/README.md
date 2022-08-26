@@ -43,6 +43,11 @@ will demonstrate that the upload will work.  Start over to upload to Git.
 
 ## Update
 
+### Update 8/26/22
+
+Added logic to remove backup files (i.e. has a letter extension followed by a 12 digit date/time
+extension).  Also will remove bin directory.
+
 ### Update 8/3/22
 
 Minor Library Updates.

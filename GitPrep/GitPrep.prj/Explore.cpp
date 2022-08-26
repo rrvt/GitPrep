@@ -10,7 +10,7 @@
 
 
 static TCchar* NotExlorableDir[] = {_T(".git"), _T(".vs"), _T("Debug"), _T("Junk"), _T("obj")};
-static TCchar* DeletableDir[]    = {_T("Debug"), _T(".vs"), _T("Junk"), _T("obj")};
+static TCchar* DeletableDir[]    = {_T("Debug"), _T(".vs"), _T("Junk"), _T("obj"), _T("bin")};
 static TCchar* DeletableExt[]    = {_T("obj"), _T("idb"), _T("pdb"), _T("tlog"), _T("lastbuildstate"),
                                     _T("ilk"), _T("wixobj"), _T("log"), _T("tlh"), _T("tli"),
                                     _T("iobj"), _T("ipdb"), _T("vtg"), _T("lib"), _T("res"),
@@ -88,16 +88,21 @@ int i;
 
 void Explore::findDeletables(TCchar* path) {
 FileSrch files;
+String   filePath;
 String   name;
+
 String   ext;
 
   files.findAllFiles(path);
 
-  while (files.getName(name)) {
+  while (files.getName(filePath)) {
+
+    name = removePath(filePath);
 
     ext = getExtension(name);
 
-    if (isDeletableFile(ext)) {ExplDsc dsc;   dsc.set(name);   data = dsc;}
+    if (isDeletableFile(ext))    {ExplDsc dsc;   dsc.set(filePath);   data = dsc;   continue;}
+    if (isBackupFile(name, ext)) {ExplDsc dsc;   dsc.set(filePath);   data = dsc;}
     }
   }
 
@@ -129,6 +134,19 @@ int i;
   for (i = 0; i < n; i++) if (DeletableExt[i] == ext) return true;
 
   return false;
+  }
+
+
+bool Explore::isBackupFile(String& name, String& ext) {
+int   lng = ext.length();   if (lng != 12) return false;
+int   i;
+Tchar ch;
+
+  for (i = 0; i < lng; i++) {ch = ext[i]; if (ch < _T('0') || _T('9') < ch) return false;}
+
+  i = name.find(_T('.')) + 1;   if (i < 0) return false;
+
+  ch = name[i];   return ch < _T('0') || _T('9') < ch;
   }
 
 
