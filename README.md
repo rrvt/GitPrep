@@ -43,6 +43,10 @@ will demonstrate that the upload will work.  Start over to upload to Git.
 
 ## Update
 
+### Update 10/27/22
+
+Start app in the same position and size as when it last exited.  Update toolbar background.
+
 ### Update 8/26/22
 
 Added logic to remove backup files (i.e. has a letter extension followed by a 12 digit date/time
