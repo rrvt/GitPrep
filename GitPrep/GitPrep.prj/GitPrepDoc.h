@@ -58,7 +58,6 @@ public:
   afx_msg void onCommit();
   afx_msg void onFindBig();
   afx_msg void onFileSave();
-  afx_msg void onOptions();
   };
 
 

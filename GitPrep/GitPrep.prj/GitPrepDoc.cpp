@@ -8,7 +8,6 @@
 #include "GitPrep.h"
 #include "GitPrepView.h"
 #include "IniFile.h"
-#include "Options.h"
 #include "Resource.h"
 
 
@@ -30,7 +29,6 @@ BEGIN_MESSAGE_MAP(GitPrepDoc, CDoc)
   ON_COMMAND(ID_FindBig,       &onFindBig)
 
   ON_COMMAND(ID_File_Save,     &onFileSave)
-  ON_COMMAND(ID_Options,       &onOptions)
 
 END_MESSAGE_MAP()
 
@@ -40,10 +38,6 @@ END_MESSAGE_MAP()
 GitPrepDoc::GitPrepDoc() noexcept : dataSource(NotePadSrc) { }
 
 GitPrepDoc::~GitPrepDoc() { }
-
-
-
-void GitPrepDoc::onOptions() {options(view());  view()->setOrientation(options.orient);}
 
 
 void GitPrepDoc::onFileOpen() {

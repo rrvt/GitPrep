@@ -4,10 +4,9 @@
 #pragma once
 #include "Archive.h"
 #include "Date.h"
-#include "Device.h"
+#include "DevBase.h"
 #include "ExpandableP.h"
 #include "IterT.h"
-#include "Wrap.h"
 
 
 
@@ -21,7 +20,6 @@
 class Datum {
 
 String s;
-Wrap   wrp;
 
 public:
 
@@ -34,8 +32,7 @@ public:
 
   void    add(String& stg);                               // Parse the data into the record
 
-  int     wrap(Device& dev, CDC* dc);
-  int     noLines() {return wrp.noLines();}
+//  int     noLines() {return wrp.nData();}
 
   int     display();
 
@@ -79,23 +76,24 @@ public:
 String name;
 Date   dt;
 int    mssnNo;
+Date   lastModified;
 
-  Store() : mssnNo(0) { }
- ~Store() { }
+         Store() : mssnNo(0) { }
+        ~Store() { }
 
-  void setName(String& s);
+  void   setName(String& s);
   String date()           {return dt.getDate();}
   String time()           {return dt.getTime();}
   int    missionNo();
 
-  void load(Archive& ar);
-  void store(Archive& ar);
+  void   load(Archive& ar);
+  void   store(Archive& ar);
 
-  bool isEmpty() {return data.end() == 0;}
+  bool   isEmpty() {return data.end() == 0;}
 
-  void add(String& s);
+  void   add(String& s);
 
-  void sort();
+  void   sort();
 
 private:
 
@@ -112,4 +110,11 @@ private:
 
 
 extern Store store;                                   // Sometimes there only needs to one object
+
+
+
+
+  //Wrap   wrp;
+//  int     wrap(DevBase& dev, CDC* dc);
+//#include "Wrap.h"
 

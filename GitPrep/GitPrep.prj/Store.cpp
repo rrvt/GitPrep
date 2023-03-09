@@ -36,14 +36,10 @@ String s;
   }
 
 
-void Store::store(Archive& ar) {
-
-  }
+void Store::store(Archive& ar) { }
 
 
-void Store::add(String& s) {data.nextData().add(s);}
-
-
+void Store::add(String& s) {data.nextData().add(s);   lastModified.getToday();}
 
 
 // Parse the data into the record
@@ -58,23 +54,30 @@ int pos = stg.find('\n');
 void Store::sort() {qsort(&data[0], &data[data.end()-1]);}
 
 
+int Datum::display() {notePad << s << nCrlf;   return 1;}
 
 
-int Datum::wrap(Device& dev, CDC* dc) {
+
+
+
+
+
+
+#if 0
+int Datum::wrap(DevBase& dev, CDC* dc) {
 int  chWidth = dev.flChWidth();
 
   dev << dCR << dClrTabs << dSetTab(TabVal) << dTab;    // Return to left margin (dCR), clear Tabs and
                                                         // tab to position desired for wrap
-    wrp.initialize(dc, dev.remaining(), dev.maxWidth(), false);
+    wrp.initialize(true, dc, dev.remaining(), dev.maxWidth(), false);
 
   dev<< dCR << dClrTabs;                                // return to left margin and clear tabs
 
-  return wrp(s);                                        // wrap string
+  return wrp(dev.maxWidth() - dev.remaining(), s);                                        // wrap string
   }
-
-
-
-int Datum::display() {
+#endif
+#if 1
+#else
 WrapIter  iter(wrp);
 WrapData* wd;
 int       i;
@@ -88,6 +91,5 @@ int       i;
     }
 
   return i;
-  }
-
+#endif
 

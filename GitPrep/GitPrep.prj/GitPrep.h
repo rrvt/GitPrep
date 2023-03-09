@@ -15,19 +15,17 @@ class MainFrame;
 class GitPrep : public CApp {
 
 public:
-
                GitPrep() noexcept : CApp(this) { }
 
   virtual BOOL InitInstance();
   virtual int  ExitInstance();
 
-          GitPrepDoc*  doc()  {return (GitPrepDoc*)  CApp::getDoc();}
-          GitPrepView* view() {return (GitPrepView*) CApp::getView();}
-          MainFrame*       mainFrm() {return (MainFrame*) m_pMainWnd;}
+  GitPrepDoc*  doc()  {return (GitPrepDoc*)  CApp::getDoc();}
+  GitPrepView* view() {return (GitPrepView*) CApp::getView();}
+  MainFrame*   mainFrm() {return (MainFrame*) m_pMainWnd;}
 
   DECLARE_MESSAGE_MAP()
 
-  afx_msg void OnFilePrintSetup();
   afx_msg void OnAppAbout();
   afx_msg void OnHelp();
   };
@@ -35,7 +33,7 @@ public:
 
 extern GitPrep theApp;
 
-inline void             invalidate() {theApp.invalidate();}
+inline void         invalidate() {theApp.invalidate();}
 inline GitPrepDoc*  doc()        {return theApp.doc();}
 inline GitPrepView* view()       {return theApp.view();}
 

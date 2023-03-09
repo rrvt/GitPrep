@@ -5,7 +5,8 @@
 #include "GitPrepView.h"
 #include "GitPrep.h"
 #include "GitPrepDoc.h"
-#include "Options.h"
+#include "OptionsDlg.h"
+#include "Resource.h"
 #include "Resources.h"
 
 
@@ -14,10 +15,11 @@
 IMPLEMENT_DYNCREATE(GitPrepView, CScrView)
 
 BEGIN_MESSAGE_MAP(GitPrepView, CScrView)
+  ON_COMMAND(ID_Options, &onOptions)
 END_MESSAGE_MAP()
 
 
-GitPrepView::GitPrepView() noexcept : dspNote( dMgr.getNotePad()), prtNote( pMgr.getNotePad()) {
+GitPrepView::GitPrepView() noexcept : dspNote(dMgr.getNotePad()), prtNote(pMgr.getNotePad()) {
 ResourceData res;
 String       pn;
   if (res.getProductName(pn)) prtNote.setTitle(pn);
@@ -30,53 +32,31 @@ BOOL GitPrepView::PreCreateWindow(CREATESTRUCT& cs) {
   }
 
 
-void GitPrepView::OnPrepareDC(CDC* pDC, CPrintInfo* pInfo) {
-uint   x;
-double topMgn   = options.topMargin.stod(x);
-double leftMgn  = options.leftMargin.stod(x);
-double rightMgn = options.rightMargin.stod(x);
-double botMgn   = options.botMargin.stod(x);
+void GitPrepView::onOptions() {
+OptionsDlg dlg;
 
-  setMgns(leftMgn,  topMgn,  rightMgn, botMgn, pDC);   CScrView::OnPrepareDC(pDC, pInfo);
+  if (printer.name.isEmpty()) printer.load(0);
+
+  if (dlg.DoModal() == IDOK) pMgr.setFontScale(printer.scale);
   }
+
 
 
 // Perpare output (i.e. report) then start the output with the call to SCrView
 
-void GitPrepView::onPrepareOutput(bool printing) {
-DataSource ds = doc()->dataSrc();
-
-  if (printing)
-    switch(ds) {
-      case NotePadSrc : prtNote.print(*this);  break;
-      }
-
-  else
-    switch(ds) {
-      case NotePadSrc : dspNote.display(*this);  break;
-      }
+void GitPrepView::onBeginPrinting() {prtNote.onBeginPrinting(*this);}
 
 
-  CScrView::onPrepareOutput(printing);
-  }
-
-
-void GitPrepView::OnBeginPrinting(CDC* pDC, CPrintInfo* pInfo) {
-
-  switch(doc()->dataSrc()) {
-    case NotePadSrc : setOrientation(options.orient); break;    // Setup separate Orientation?
-    }
-  setPrntrOrient(theApp.getDevMode(), pDC);   CScrView::OnBeginPrinting(pDC, pInfo);
-  }
+void GitPrepView::onDisplayOutput() {dspNote.display(*this);}
 
 
 // The footer is injected into the printed output, so the output goes directly to the device.
 // The output streaming functions are very similar to NotePad's streaming functions so it should not
 // be a great hardship to construct a footer.
 
-void GitPrepView::printFooter(Device& dev, int pageNo) {
+void GitPrepView::printFooter(DevBase& dev, int pageNo) {
   switch(doc()->dataSrc()) {
-    case NotePadSrc : prtNote.footer(dev, pageNo);  break;
+    case NotePadSrc : prtNote.prtFooter(dev, pageNo);  break;
     }
   }
 
@@ -88,7 +68,6 @@ void GitPrepView::OnEndPrinting(CDC* pDC, CPrintInfo* pInfo) {
 
   switch(doc()->dataSrc()) {
     case NotePadSrc : break;
-
     }
   }
 
