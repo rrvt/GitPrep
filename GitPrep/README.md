@@ -43,6 +43,10 @@ will demonstrate that the upload will work.  Start over to upload to Git.
 
 ## Update
 
+### Update 3/15/23
+
+Complete move of orientation to reports.  Also removed redundant classes.
+
 ### Update 3/8/23
 
 Added numbers to notepad archive output.   Fixed (hopefully) Print and Print Preview.  See MakeApp for

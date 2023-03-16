@@ -10,10 +10,6 @@ class GitPrepDoc;
 
 
 class GitPrepView : public CScrView {
-
-NotePadRpt dspNote;
-NotePadRpt prtNote;
-
 protected: // create from serialization only
 
   GitPrepView() noexcept;
@@ -25,6 +21,8 @@ public:
   virtual     ~GitPrepView() { }
 
   virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
+
+  virtual void OnInitialUpdate();
 
   virtual void onBeginPrinting();
   virtual void onDisplayOutput();

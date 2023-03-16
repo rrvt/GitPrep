@@ -19,7 +19,9 @@ BEGIN_MESSAGE_MAP(GitPrepView, CScrView)
 END_MESSAGE_MAP()
 
 
-GitPrepView::GitPrepView() noexcept : dspNote(dMgr.getNotePad()), prtNote(pMgr.getNotePad()) {
+
+
+GitPrepView::GitPrepView() noexcept {
 ResourceData res;
 String       pn;
   if (res.getProductName(pn)) prtNote.setTitle(pn);
@@ -32,12 +34,23 @@ BOOL GitPrepView::PreCreateWindow(CREATESTRUCT& cs) {
   }
 
 
+void GitPrepView::OnInitialUpdate() {
+  CScrView::OnInitialUpdate();
+  }
+
+
 void GitPrepView::onOptions() {
 OptionsDlg dlg;
 
   if (printer.name.isEmpty()) printer.load(0);
 
-  if (dlg.DoModal() == IDOK) pMgr.setFontScale(printer.scale);
+  initNoteOrietn();   dlg.orient = printer.toStg(prtNote.prtrOrietn);
+
+  if (dlg.DoModal() == IDOK) {
+    pMgr.setFontScale(printer.scale);
+
+    prtNote.prtrOrietn = printer.toOrient(dlg.orient);   saveNoteOrietn();
+    }
   }
 
 
