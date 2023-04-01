@@ -3,12 +3,12 @@
 
 #include "stdafx.h"
 #include "GitPrepDoc.h"
-#include "ExtraResource.h"
 #include "FileName.h"
 #include "GitPrep.h"
 #include "GitPrepView.h"
 #include "IniFile.h"
 #include "Resource.h"
+#include "ResourceExtra.h"
 
 
 static TCchar* GitHub        = _T("C:\\Users\\rrvt\\AppData\\Local\\GitHubDesktop\\GitHubDesktop.exe");

@@ -4,13 +4,13 @@
 #include "stdafx.h"
 #include "GitPrep.h"
 #include "AboutDlg.h"
-#include "ExtraResource.h"
 #include "IniFile.h"
 #include "MainFrame.h"
 #include "NotePad.h"
 #include "GitPrepDoc.h"
 #include "GitPrepView.h"
 #include "Resource.h"
+#include "ResourceExtra.h"
 
 
 GitPrep theApp;                       // The one and only GitPrep object

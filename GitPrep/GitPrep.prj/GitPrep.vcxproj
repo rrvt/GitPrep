@@ -64,14 +64,14 @@
       <AdditionalIncludeDirectories>
         $(ProjectDir);$(SolutionDir)..\..\Library\Library.prj\;$(SolutionDir)..\..\Library\Extras\;%(AdditionalIncludeDirectories)
       </AdditionalIncludeDirectories>
-      <BasicRuntimeChecks />
+      <BasicRuntimeChecks/>
       <WholeProgramOptimization>true</WholeProgramOptimization>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <SupportJustMyCode>false</SupportJustMyCode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <PrecompiledHeaderFile />
-      <PrecompiledHeaderOutputFile />
+      <PrecompiledHeaderFile/>
+      <PrecompiledHeaderOutputFile/>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
@@ -109,10 +109,10 @@
       </AdditionalIncludeDirectories>
       <DebugInformationFormat>None</DebugInformationFormat>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <BasicRuntimeChecks />
+      <BasicRuntimeChecks/>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <PrecompiledHeaderFile />
-      <PrecompiledHeaderOutputFile />
+      <PrecompiledHeaderFile/>
+      <PrecompiledHeaderOutputFile/>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
@@ -122,7 +122,7 @@
       <AdditionalDependencies>Htmlhelp.lib</AdditionalDependencies>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
-      <ProgramDatabaseFile />
+      <ProgramDatabaseFile/>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -139,7 +139,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Library\Extras\AboutDlg.h" />
-    <ClInclude Include="..\..\Library\Extras\ExtraResource.h" />
     <ClInclude Include="..\..\Library\Extras\OptionsDlg.h" />
     <ClInclude Include="Explore.h" />
     <ClInclude Include="GitPrep.h" />
@@ -149,6 +148,8 @@
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+  <ClInclude Include="..\..\Library\Extras\ResourceExtra.h" />
+    <ClInclude Include="..\..\Library\Extras\RptOrientDlgOne.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Library\Extras\AboutDlg.cpp" />
@@ -159,6 +160,7 @@
     <ClCompile Include="GitPrepView.cpp" />
     <ClCompile Include="MainFrame.cpp" />
     <ClCompile Include="stdafx.cpp" />
+  <ClCompile Include="..\..\Library\Extras\RptOrientDlgOne.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="GitPrep.rc" />
@@ -170,6 +172,7 @@
     <None Include="..\README.md" />
     <None Include="res\Toolbar03.bmp" />
     <None Include="C:\Users\rrvt\AppData\Roaming\GitPrep\GitPrep.ini" />
+  <None Include="..\..\Library\Extras\RptOrientOne.rc2" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\GitPrep.ico" />

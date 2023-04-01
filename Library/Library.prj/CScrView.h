@@ -91,7 +91,7 @@ protected:
      CMyView::OnEndPrinting        o Deallocate GDI resources
 */
 
-  virtual BOOL OnPreparePrinting(CPrintInfo* info);                                 // print dialog box
+  virtual BOOL OnPreparePrinting(CPrintInfo* info);
   virtual void OnBeginPrinting(CDC* dc, CPrintInfo* info) {pMgr.onBeginPrinting(dc, info);}
   virtual void OnPrepareDC(    CDC* dc, CPrintInfo* info = 0);                // Display/Printer Override
   virtual void OnPrint(        CDC* dc, CPrintInfo* info) {pMgr.onPrint(dc, info);}
@@ -101,6 +101,7 @@ public:
           void disablePrtWrap()     {pMgr.wrapEnabled = false;}
           void enablePrtWrap()      {pMgr.wrapEnabled = true;}
 
+  virtual void onPreparePrinting(CPrintInfo* info) { }
   virtual void onBeginPrinting() { }               // View link to Begin Printing
 
   // Printer Overrides
