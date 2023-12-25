@@ -33,13 +33,13 @@ private:
 
 
 class Explore;
-typedef DatumPtrT<ExplDsc> ExplDscP;
+typedef DatumPtrT<ExplDsc, String> ExplDscP;
 typedef IterT<Explore, ExplDsc> ExplIter;
 
 
 class Explore {
 
-ExpandableP<ExplDsc, ExplDscP, 2> data;
+ExpandableP<ExplDsc, String, ExplDscP, 2> data;
 
 public:
 

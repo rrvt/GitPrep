@@ -2,18 +2,18 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
 
 <Product Id="*" UpgradeCode="70214048-0A3E-48E9-A95B-199D9B376CC3" Language="1033"
-         Manufacturer="Bob -- K6RWY" Name="GitPrep"
-         Version="!(bind.fileVersion.GitPrep.cmp)"
-         >
+                  Manufacturer="Bob -- K6RWY" Name="GitPrep"
+                  Version="!(bind.fileVersion.GitPrep.cmp)"
+                  >
 
   <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine"
-           Manufacturer="Bob -- K6RWY" Description="Installs GitPrep"
-           Comments="Copyright (c) Bob -- K6RWY"
-           />
+                      Manufacturer="Bob -- K6RWY" Description="Installs GitPrep"
+                      Comments="Copyright (c) Bob -- K6RWY"
+                      />
 
   <MajorUpgrade Schedule="afterInstallInitialize"
-                AllowDowngrades="no"   IgnoreRemoveFailure="no"   AllowSameVersionUpgrades="no"
-                DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+                                AllowDowngrades="no"   IgnoreRemoveFailure="no"   AllowSameVersionUpgrades="no"
+                                DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
 
   <MediaTemplate EmbedCab="yes" />
 
@@ -35,7 +35,7 @@
 
   <Feature Id="ProductFeatures" Title="Main Product" Level="1" >
     <ComponentGroupRef Id="GitPrep.ftr"/>
-    <ComponentGroupRef Id="UninstallGitPrep.ftr"/>
+    <ComponentGroupRef Id="Uninstall_GitPrep.ftr"/>
   </Feature>
 </Product>
 
@@ -44,8 +44,8 @@
   <ComponentRef Id="GitPrep.cmp"/>
   <ComponentRef Id="Help.cmp"/>
 </ComponentGroup>
-<ComponentGroup Id="UninstallGitPrep.ftr">
-  <ComponentRef Id="UninstallGitPrep.cmp"/>
+<ComponentGroup Id="Uninstall_GitPrep.ftr">
+  <ComponentRef Id="Uninstall_GitPrep.cmp"/>
 </ComponentGroup>
 </Fragment>
 
@@ -53,7 +53,7 @@
 <Fragment>
   <Directory Id="TARGETDIR" Name="SourceDir">
     <Directory Id="ProgramFilesFolder">
-      <Directory Id="GitPrep.pff" Name="GitPrep" />
+      <Directory Id="GITPREP.PFF" Name="GitPrep" />
     </Directory>
 
     <Directory Id="ProgramMenuFolder">
@@ -61,16 +61,17 @@
     </Directory>
 
     <Directory Id="DesktopFolder" />
+
   </Directory>
 
   <Property Id="ApplicationFolderName" Value="GitPrep" />
-  <Property Id="WIXUI_INSTALLDIR"      Value="GitPrep.pff"/>
+  <Property Id="WIXUI_INSTALLDIR"      Value="GITPREP.PFF"/>
   <Property Id="WixAppFolder"          Value="WixPerMachineFolder" />
 </Fragment>
 
 <Fragment>
 
-  <Component Id="GitPrep.cmp"  Guid="D3C9F1CF-CE3E-4CDC-AF21-7AD8D02CB372" Directory="GitPrep.pff">
+  <Component Id="GitPrep.cmp"  Guid="D3C9F1CF-CE3E-4CDC-AF21-7AD8D02CB372" Directory="GITPREP.PFF">
     <File Id="GitPrep.cmp" Source="$(var.SolutionDir)..\Release\GitPrep.exe" KeyPath="yes"/>
 
     <Shortcut Id               = "GitPrep.shc"
@@ -78,7 +79,7 @@
               Description      = "Prepare Git Submission for Upload"
               Advertise        = "yes"
               Directory        = "GitPrep.pmf"
-              WorkingDirectory = "GitPrep.pff"
+              WorkingDirectory = "GITPREP.PFF"
               Icon             = "GitPrep_Icon.exe"
               />
 
@@ -87,12 +88,12 @@
               Description      = "Prepare Git Submission for Upload"
               Advertise        = "yes"
               Directory        = "DesktopFolder"
-              WorkingDirectory = "GitPrep.pff"
+              WorkingDirectory = "GITPREP.PFF"
               Icon             = "GitPrep_Icon.exe"
               />
   </Component>
 
-  <Component Id="Help.cmp"  Guid="732716AC-5E56-40EA-9C82-C25889C0B21D" Directory="GitPrep.pff">
+  <Component Id="Help.cmp"  Guid="732716AC-5E56-40EA-9C82-C25889C0B21D" Directory="GITPREP.PFF">
     <File Id="Help.cmp" Source="$(var.SolutionDir)..\Release\GitPrep.chm" KeyPath="yes"/>
   </Component>
 
@@ -100,8 +101,8 @@
 
 <Fragment>
 
-  <Component Id="UninstallGitPrep.cmp" 
-                                  Guid="821A3780-23B3-4475-A437-D73146865D19" Directory="GitPrep.pmf">
+  <Component Id="Uninstall_GitPrep.cmp" 
+                                  Guid="8B734974-A60B-49F6-978E-B8F700E3CAD1" Directory="GitPrep.pmf">
 
     <Shortcut Id               = "UninstallGitPrep.shc"
               Name             = "Uninstall GitPrep"
@@ -111,7 +112,7 @@
               Icon             = "GitPrep_Icon.exe"
               />
     <RemoveFolder Id="GitPrep.uni" Directory="GitPrep.pmf" On="uninstall"/>
-    <RegistryValue Root="HKCU" Key="Software\UninstallGitPrep.cmp" Name="installed"
+    <RegistryValue Root="HKCU" Key="Software\Uninstall_GitPrep.cmp" Name="installed"
                    Type="integer" Value="1" KeyPath="yes"/>
   </Component>
 

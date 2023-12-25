@@ -1,7 +1,8 @@
 [SolutionInfo]
+RootPath=D:\Sources\GitPrep
 Path=D:\Sources\GitPrep\GitPrep\GitPrep.sln
 Name=GitPrep
-Version=2.0
+Version=2.100000
 [DefaultPath]
 NPaths=2
 DefKey0=Icon
@@ -18,8 +19,7 @@ IconPath=D:\Sources\GitPrep\GitPrep.prj\res\GitPrep.ico
 ProductName=GitPrep
 Company=Bob -- K6RWY
 WixName=GitPrep
-WixVersion=1.0.7.0
-UpgradeGUID=70214048-0A3E-48E9-A95B-199D9B376CC3
+WixVersion=1.0.13.0
 UpgradeCode=70214048-0A3E-48E9-A95B-199D9B376CC3
 SaveVerAllowed=0
 LicenseRequired=0
@@ -29,7 +29,7 @@ IconID=GitPrep
 NoDirectories=1
 [PFFDirDesc00]
 ID=GitPrep
-WixID=GitPrep.pff
+WixID=GITPREP.PFF
 Parent=
 Name=GitPrep
 HasChildren=0
@@ -48,7 +48,7 @@ CurSel=GitPrep
 FeatureID=GitPrep
 ProgramID=GitPrep
 StartMenuID=GitPrep
-CurSel=Help
+CurSel=GitPrep
 NoComponents=2
 [Ftr00Cmp00]
 ID=GitPrep

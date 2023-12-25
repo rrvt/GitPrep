@@ -43,6 +43,10 @@ will demonstrate that the upload will work.  Start over to upload to Git.
 
 ## Update
 
+### Update 12/25/23
+
+Reworked ExpandableP and ripple due to changes.
+
 ### Update 6/29/23
 
 Library update.
