@@ -43,6 +43,10 @@ will demonstrate that the upload will work.  Start over to upload to Git.
 
 ## Update
 
+### Update 1/8/24
+
+Added "Target" to directories to delete.  Libary and other changes.
+
 ### Update 12/25/23
 
 Reworked ExpandableP and ripple due to changes.
