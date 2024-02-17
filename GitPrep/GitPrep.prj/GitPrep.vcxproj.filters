@@ -36,9 +36,6 @@
     <ClInclude Include="GitPrepView.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Library\Extras\ExtraResource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Library\Extras\OptionsDlg.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -46,6 +43,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Explore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Extras\ResourceExtra.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Extras\RptOrientDlgOne.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -74,6 +77,9 @@
     <ClCompile Include="Explore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Library\Extras\RptOrientDlgOne.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="GitPrep.rc">
@@ -95,6 +101,9 @@
       <Filter>Resource Files</Filter>
     </None>
     <None Include="C:\Users\rrvt\AppData\Roaming\GitPrep\GitPrep.ini" />
+    <None Include="..\..\Library\Extras\RptOrientOne.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\GitPrep.ico">

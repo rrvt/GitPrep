@@ -43,6 +43,11 @@ will demonstrate that the upload will work.  Start over to upload to Git.
 
 ## Update
 
+### Update 2/16/24
+
+Reorganized the Library so that it compiles once into Debug and Release directories under the Library
+directory.
+
 ### Update 1/8/24
 
 Added "Target" to directories to delete.  Libary and other changes.
