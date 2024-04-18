@@ -1,6 +1,6 @@
 <vpwhist>
 	<active_config>
-		<p n="..\GitPrep.prj\GitPrep.vpj" v=",Debug|Win32"/>
+		<p n="..\GitPrep.prj\GitPrep.vpj" v=",Release|Win32"/>
 		<p n="..\..\Library\Library.prj\Library.vpj" v=""/>
 		<p n="..\GitPrep.hlp\GitPrep.hlp.vpj" v=",Debug|Win32"/>
 		<p n="..\GitPrep.wix\GitPrep.wix.vpj" v=",Debug|x86"/>
@@ -17,9 +17,9 @@
 	<tree_expansion scroll="0">
 		<p n="..\GitPrep.hlp\GitPrep.hlp.vcxproj" v="+@"/>
 		<p n="..\GitPrep.prj\GitPrep.vcxproj" v="-@">
-			<p n="Header Files" v="+"/>
-			<p n="Resource Files" v="+"/>
-			<p n="Source Files" v="+"/>
+			<p n="Header Files" v="-"/>
+			<p n="Resource Files" v="-"/>
+			<p n="Source Files" v="-"/>
 		</p>
 		<p n="..\GitPrep.wix\GitPrep.wix.wixproj" v="+@"/>
 	</tree_expansion>
@@ -27,7 +27,7 @@
 		<monitor_configs>
 			<monitor_config v="0 0 1920 1080">
 				<screen v="1920 1080 362 0 1283 1048 0 0 N 0 0 0 0 1023 763 0"/>
-				<mdistate v="AAAAAwAAAAIAAAAD2gAAAAIAMAAAAAAAAABAAAAFAgAABAAAAAAAAAAAAAAAB38AAAQ3AAAAAuoAAADKAAAAAvsAAAACAAAAAgAAAAEAAAAA+wAAAAIAAAACAAAAAQAAAAD8AAAATQAAAABAADMAOgA6ADoARAA6AFwAUwBvAHUAcgBjAGUAcwBcAEcAaQB0AFAAcgBlAHAAXABSAEUAQQBEAE0ARQAuAG0AZAAA/////wAA/AAAAE0AAAAAQAAyADoAOgA6AEQAOgBcAFMAbwB1AHIAYwBlAHMAXABDAG8AZABlAEcAZQBuAFwAUgBFAEEARABNAEUALgBtAGQBAP////8AAQAAAADaAAAAHgAwAC0AMQA1ADUAMQA0ADIAMwAxADMAMQA5ADkANQBOAAADdAAAAL0AAAURAAAD6wAAAAAAAAAAAAAHfwAABDcAAAAC6gAAABYAAAAC+wAAAAAAAAAA+wAAAAAAAAAAAAAAANoAAAAeADAALQAxADUANQA2ADQAMQA2ADUAMwA1ADQANAAyAE4AAAHgAAABRAAAAvsAAAJmAAAAAAAAAAAAAAd/AAAENwAAAALqAAAAFgAAAAL7AAAAAAAAAAD7AAAAAAAAAAAAAAAA"/>
+				<mdistate v="AAAAAwAAAAIAAAAD2gAAAAIAMAAAAAAAAABAAAAFAgAABAAAAAAAAAAAAAAAB38AAAQ3AAAAAuoAAAJOAAAAAvsAAAAFAAAABQAAAAQAAAAAAAAAAwAAAAEAAAAC+wAAAAUAAAAFAAAABAAAAAMAAAAAAAAAAQAAAAL8AAAAZwAAAABaADQAOgA6ADoARAA6AFwAUwBvAHUAcgBjAGUAcwBcAEcAaQB0AFAAcgBlAHAAXABHAGkAdABQAHIAZQBwAC4AcAByAGoAXABHAGkAdABQAHIAZQBwAC4AcgBjAAD/////AAD8AAAAbQAAAABgADMAOgA6ADoARAA6AFwAUwBvAHUAcgBjAGUAcwBcAEcAaQB0AFAAcgBlAHAAXABHAGkAdABQAHIAZQBwAC4AcAByAGoAXABNAGEAaQBuAEYAcgBhAG0AZQAuAGMAcABwAAD/////AAD8AAAAaQAAAABcADIAOgA6ADoARAA6AFwAUwBvAHUAcgBjAGUAcwBcAEcAaQB0AFAAcgBlAHAAXABHAGkAdABQAHIAZQBwAC4AcAByAGoAXABNAGEAaQBuAEYAcgBhAG0AZQAuAGgAAP////8AAPwAAABtAAAAAGAANQA6ADoAOgBEADoAXABTAG8AdQByAGMAZQBzAFwARwBpAHQAUAByAGUAcABcAEcAaQB0AFAAcgBlAHAALgBwAHIAagBcAE0AeQBUAG8AbwBsAEIAYQByAC4AYwBwAHAAAP////8AAPwAAABNAAAAAEAANgA6ADoAOgBEADoAXABTAG8AdQByAGMAZQBzAFwARwBpAHQAUAByAGUAcABcAFIARQBBAEQATQBFAC4AbQBkAQD/////AAEAAAAA2gAAAB4AMAAtADEANQA1ADEANAAyADMAMQAzADEAOQA5ADUATgAAA3QAAAC9AAAFEQAAA+sAAAAAAAAAAAAAB38AAAQ3AAAAAuoAAAAWAAAAAvsAAAAAAAAAAPsAAAAAAAAAAAAAAADaAAAAHgAwAC0AMQA1ADUANgA0ADEANgA1ADMANQA0ADQAMgBOAAAB4AAAAUQAAAL7AAACZgAAAAAAAAAAAAAHfwAABDcAAAAC6gAAABYAAAAC+wAAAAAAAAAA+wAAAAAAAAAAAAAAAA=="/>
 				<debug_layout version="1" state="N" fullscreen="0">
 					<toolwindowinfo>
 						<p n="_tbannotations_browser_form" f="0"/>
@@ -1075,7 +1075,7 @@
 			</monitor_config>
 			<monitor_config v="0 0 2048 1152">
 				<screen v="2048 1152 602 0 1320 1048 0 0 N 0 0 0 0 1061 677 0"/>
-				<mdistate v="AAAAAwAAAAIAAAAD2gAAAAIAMAAAAAAAAABAAAAFAgAABAAAAAAAAAAAAAAAB38AAAQ3AAAAAuoAAACKAAAAAvsAAAABAAAAAQAAAAD7AAAAAQAAAAEAAAAA/AAAAGcAAAAAWgAyADoAOgA6AEQAOgBcAFMAbwB1AHIAYwBlAHMAXABHAGkAdABQAHIAZQBwAFwARwBpAHQAUAByAGUAcAAuAHAAcgBqAFwARwBpAHQAUAByAGUAcAAuAHIAYwEA/////wAAAAAAANoAAAAeADAALQAxADUANQAxADQAMgAzADEAMwAxADkAOQA1AE4AAAN0AAAAvQAABREAAAPrAAAAAAAAAAAAAAd/AAAENwAAAALqAAAAFgAAAAL7AAAAAAAAAAD7AAAAAAAAAAAAAAAA2gAAAB4AMAAtADEANQA1ADYANAAxADYANQAzADUANAA0ADIATgAAAeAAAAFEAAAC+wAAAmYAAAAAAAAAAAAAB38AAAQ3AAAAAuoAAAAWAAAAAvsAAAAAAAAAAPsAAAAAAAAAAAAAAAA="/>
+				<mdistate v="AAAAAwAAAAIAAAAD2gAAAAIAMAAAAAAAAABAAAAFAgAABAAAAAAAAAAAAAAAB38AAAQ3AAAAAuoAAADKAAAAAvsAAAACAAAAAgAAAAAAAAAB+wAAAAIAAAACAAAAAAAAAAH8AAAATQAAAABAADIAOgA6ADoARAA6AFwAUwBvAHUAcgBjAGUAcwBcAEMAbwBkAGUARwBlAG4AXABSAEUAQQBEAE0ARQAuAG0AZAEA/////wAA/AAAAE0AAAAAQAAzADoAOgA6AEQAOgBcAFMAbwB1AHIAYwBlAHMAXABHAGkAdABQAHIAZQBwAFwAUgBFAEEARABNAEUALgBtAGQAAP////8AAAAAAADaAAAAHgAwAC0AMQA1ADUAMQA0ADIAMwAxADMAMQA5ADkANQBOAAADdAAAAL0AAAURAAAD6wAAAAAAAAAAAAAHfwAABDcAAAAC6gAAABYAAAAC+wAAAAAAAAAA+wAAAAAAAAAAAAAAANoAAAAeADAALQAxADUANQA2ADQAMQA2ADUAMwA1ADQANAAyAE4AAAHgAAABRAAAAvsAAAJmAAAAAAAAAAAAAAd/AAAENwAAAALqAAAAFgAAAAL7AAAAAAAAAAD7AAAAAAAAAAAAAAAA"/>
 				<fullscreen_layout version="1" state="N" fullscreen="0">
 					<toolwindowinfo>
 						<p n="_tbannotations_browser_form" f="0"/>
@@ -1327,34 +1327,58 @@
 				</debug_layout>
 			</monitor_config>
 		</monitor_configs>
-		<cwd v="..\..\CodeGen"/>
+		<cwd v="..\GitPrep.prj"/>
+		<buffer bn="..\GitPrep.prj\MainFrame.h" dn="" mtn="">
+			<bi ma="1 110 1" tabs="" wws="1" iwt="" st="8" in="1" bw="0" us="32000" ro="0" se="1" sn="0" bin="0" mn="" hm="0" mf="86049376" tl="0" mll="0" ase="0" lnl="1" lcf="0" caps="0" e="0" esbu2="-1" clb="" clm="" sc="" sce="" scu="" alm="0" fwrm="0" hmre="0" hmrbw="0" spcwt="" swf="" sm="" ldf="42" stat="" bfont="" mfont="" df="0" sco="" of=""/>
+			<view ln=".639" cl="31" le="0" cx="31" cy="31" wi="5" bi="1" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		</buffer>
+		<buffer bn="..\GitPrep.prj\GitPrep.rc" dn="" mtn="">
+			<bi ma="1 74 1" tabs="2 " wws="1" iwt="" st="0" in="1" bw="0" us="32000" ro="0" se="1" sn="0" bin="0" mn="" hm="0" mf="85066272" tl="0" mll="0" ase="0" lnl="1" lcf="0" caps="0" e="73" esbu2="-1" clb="" clm="" sc="" sce="" scu="" alm="0" fwrm="0" hmre="0" hmrbw="0" spcwt="" swf="" sm="" ldf="42" stat="" bfont="" mfont="" df="0" sco="" of=""/>
+			<view ln=".4887" cl="85" le="0" cx="86" cy="16" wi="5" bi="3" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		</buffer>
 		<buffer bn="..\README.md" dn="" mtn="">
-			<bi ma="1 74 1" tabs="2 " wws="1" iwt="" st="8" in="2" bw="0" us="32000" ro="0" se="1" sn="0" bin="0" mn="" hm="0" mf="87163392" tl="0" mll="0" ase="0" lnl="1" lcf="0" caps="0" e="0" esbu2="-1" clb="" clm="" sc="" sce="" scu="" alm="0" fwrm="0" hmre="0" hmrbw="0" spcwt="" swf="2" sm="" ldf="42" stat="" bfont="" mfont="" df="0" sco="" of=""/>
-			<view ln=".1833" cl="11" le="0" cx="11" cy="13" wi="5" bi="2" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+			<bi ma="1 74 1" tabs="2 " wws="1" iwt="" st="8" in="2" bw="0" us="32000" ro="0" se="1" sn="0" bin="0" mn="" hm="0" mf="87162912" tl="0" mll="0" ase="0" lnl="1" lcf="0" caps="0" e="0" esbu2="-1" clb="" clm="" sc="" sce="" scu="" alm="0" fwrm="0" hmre="0" hmrbw="0" spcwt="" swf="2" sm="" ldf="42" stat="" bfont="" mfont="" df="0" sco="" of=""/>
+			<view ln=".0" cl="1" le="0" cx="1" cy="0" wi="5" bi="5" ht="0" hn="0" hf="0" hc="4" hb="4"/>
 		</buffer>
-		<buffer bn="..\..\CodeGen\README.md" dn="" mtn="">
-			<bi ma="1 74 1" tabs="2 " wws="1" iwt="" st="8" in="2" bw="0" us="32000" ro="0" se="1" sn="0" bin="0" mn="" hm="0" mf="87032352" tl="0" mll="0" ase="0" lnl="1" lcf="0" caps="0" e="0" esbu2="-1" clb="" clm="" sc="" sce="" scu="" alm="0" fwrm="0" hmre="0" hmrbw="0" spcwt="" swf="2" sm="" ldf="42" stat="" bfont="" mfont="" df="0" sco="" of=""/>
-			<view ln=".0" cl="1" le="0" cx="1" cy="0" wi="5" bi="1" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		<buffer bn="..\GitPrep.prj\MyToolBar.cpp" dn="" mtn="">
+			<bi ma="1 110 1" tabs="" wws="1" iwt="" st="8" in="1" bw="0" us="32000" ro="0" se="1" sn="0" bin="0" mn="" hm="0" mf="86049376" tl="0" mll="0" ase="0" lnl="1" lcf="0" caps="0" e="0" esbu2="-1" clb="" clm="" sc="" sce="" scu="" alm="0" fwrm="0" hmre="0" hmrbw="0" spcwt="" swf="" sm="" ldf="42" stat="" bfont="" mfont="" df="0" sco="" of=""/>
+			<view ln=".0" cl="1" le="0" cx="1" cy="0" wi="5" bi="4" ht="0" hn="0" hf="0" hc="4" hb="4"/>
 		</buffer>
-		<window x="1" y="22" width="1021" height="740" icon_x="0" icon_y="0" state="N" wf="0" wt="3" font_info=",,," did="0" mi="*,,," pi="0">
-			<buffer bn="..\README.md" dn="" mtn=""/>
-			<view ln=".1864" cl="1" le="0" cx="1" cy="17" wi="307" bi="2" ht="0" hn="0" hf="0" hc="4" hb="4"/>
-		</window>
+		<buffer bn="..\GitPrep.prj\MainFrame.cpp" dn="" mtn="">
+			<bi ma="1 110 1" tabs="" wws="1" iwt="" st="8" in="1" bw="0" us="32000" ro="0" se="1" sn="0" bin="0" mn="" hm="0" mf="67108896" tl="0" mll="0" ase="0" lnl="1" lcf="0" caps="0" e="0" esbu2="-1" clb="" clm="" sc="" sce="" scu="" alm="0" fwrm="0" hmre="0" hmrbw="0" spcwt="" swf="" sm="" ldf="42" stat="" bfont="" mfont="" df="0" sco="" of=""/>
+			<view ln=".-1" cl="70" le="0" cx="70" cy="20" wi="5" bi="2" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		</buffer>
 		<window x="1" y="22" width="1021" height="740" icon_x="0" icon_y="0" state="N" wf="0" wt="2" font_info=",,," did="0" mi="*,,," pi="0">
-			<buffer bn="..\..\CodeGen\README.md" dn="" mtn=""/>
-			<view ln=".9224" cl="1" le="0" cx="1" cy="21" wi="310" bi="1" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+			<buffer bn="..\GitPrep.prj\MainFrame.h" dn="" mtn=""/>
+			<view ln=".639" cl="31" le="0" cx="31" cy="31" wi="357" bi="1" ht="0" hn="0" hf="0" hc="4" hb="4"/>
 		</window>
-		<mdistate v="AAAAAwAAAAIAAAAD2gAAAAIAMAAAAAAAAABAAAAFAgAABAAAAAAAAAAAAAAAB38AAAQ3AAAAAuoAAADKAAAAAvsAAAACAAAAAgAAAAEAAAAA+wAAAAIAAAACAAAAAQAAAAD8AAAATQAAAABAADMAOgA6ADoARAA6AFwAUwBvAHUAcgBjAGUAcwBcAEcAaQB0AFAAcgBlAHAAXABSAEUAQQBEAE0ARQAuAG0AZAAA/////wAA/AAAAE0AAAAAQAAyADoAOgA6AEQAOgBcAFMAbwB1AHIAYwBlAHMAXABDAG8AZABlAEcAZQBuAFwAUgBFAEEARABNAEUALgBtAGQBAP////8AAQAAAADaAAAAHgAwAC0AMQA1ADUAMQA0ADIAMwAxADMAMQA5ADkANQBOAAADdAAAAL0AAAURAAAD6wAAAAAAAAAAAAAHfwAABDcAAAAC6gAAABYAAAAC+wAAAAAAAAAA+wAAAAAAAAAAAAAAANoAAAAeADAALQAxADUANQA2ADQAMQA2ADUAMwA1ADQANAAyAE4AAAHgAAABRAAAAvsAAAJmAAAAAAAAAAAAAAd/AAAENwAAAALqAAAAFgAAAAL7AAAAAAAAAAD7AAAAAAAAAAAAAAAA"/>
+		<window x="1" y="22" width="1021" height="740" icon_x="0" icon_y="0" state="N" wf="0" wt="3" font_info=",,," did="0" mi="*,,," pi="0">
+			<buffer bn="..\GitPrep.prj\MainFrame.cpp" dn="" mtn=""/>
+			<view ln=".727" cl="70" le="0" cx="70" cy="20" wi="353" bi="2" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		</window>
+		<window x="1" y="22" width="1021" height="740" icon_x="0" icon_y="0" state="N" wf="0" wt="5" font_info=",,," did="0" mi="*,,," pi="0">
+			<buffer bn="..\GitPrep.prj\MyToolBar.cpp" dn="" mtn=""/>
+			<view ln=".0" cl="1" le="0" cx="1" cy="0" wi="385" bi="4" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		</window>
+		<window x="1" y="22" width="1021" height="740" icon_x="0" icon_y="0" state="N" wf="0" wt="4" font_info="Default Unicode Font,11,0,1" did="0" mi="*,,," pi="0">
+			<buffer bn="..\GitPrep.prj\GitPrep.rc" dn="" mtn=""/>
+			<view ln=".4887" cl="85" le="0" cx="86" cy="16" wi="348" bi="3" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		</window>
+		<window x="1" y="22" width="1021" height="740" icon_x="0" icon_y="0" state="N" wf="0" wt="6" font_info=",,," did="0" mi="*,,," pi="0">
+			<buffer bn="..\README.md" dn="" mtn=""/>
+			<view ln=".1844" cl="29" le="0" cx="29" cy="18" wi="258" bi="5" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		</window>
+		<mdistate v="AAAAAwAAAAIAAAAD2gAAAAIAMAAAAAAAAABAAAAFAgAABAAAAAAAAAAAAAAAB38AAAQ3AAAAAuoAAAJOAAAAAvsAAAAFAAAABQAAAAQAAAAAAAAAAwAAAAEAAAAC+wAAAAUAAAAFAAAABAAAAAMAAAAAAAAAAQAAAAL8AAAAZwAAAABaADQAOgA6ADoARAA6AFwAUwBvAHUAcgBjAGUAcwBcAEcAaQB0AFAAcgBlAHAAXABHAGkAdABQAHIAZQBwAC4AcAByAGoAXABHAGkAdABQAHIAZQBwAC4AcgBjAAD/////AAD8AAAAbQAAAABgADMAOgA6ADoARAA6AFwAUwBvAHUAcgBjAGUAcwBcAEcAaQB0AFAAcgBlAHAAXABHAGkAdABQAHIAZQBwAC4AcAByAGoAXABNAGEAaQBuAEYAcgBhAG0AZQAuAGMAcABwAAD/////AAD8AAAAaQAAAABcADIAOgA6ADoARAA6AFwAUwBvAHUAcgBjAGUAcwBcAEcAaQB0AFAAcgBlAHAAXABHAGkAdABQAHIAZQBwAC4AcAByAGoAXABNAGEAaQBuAEYAcgBhAG0AZQAuAGgAAP////8AAPwAAABtAAAAAGAANQA6ADoAOgBEADoAXABTAG8AdQByAGMAZQBzAFwARwBpAHQAUAByAGUAcABcAEcAaQB0AFAAcgBlAHAALgBwAHIAagBcAE0AeQBUAG8AbwBsAEIAYQByAC4AYwBwAHAAAP////8AAPwAAABNAAAAAEAANgA6ADoAOgBEADoAXABTAG8AdQByAGMAZQBzAFwARwBpAHQAUAByAGUAcABcAFIARQBBAEQATQBFAC4AbQBkAQD/////AAEAAAAA2gAAAB4AMAAtADEANQA1ADEANAAyADMAMQAzADEAOQA5ADUATgAAA3QAAAC9AAAFEQAAA+sAAAAAAAAAAAAAB38AAAQ3AAAAAuoAAAAWAAAAAvsAAAAAAAAAAPsAAAAAAAAAAAAAAADaAAAAHgAwAC0AMQA1ADUANgA0ADEANgA1ADMANQA0ADQAMgBOAAAB4AAAAUQAAAL7AAACZgAAAAAAAAAAAAAHfwAABDcAAAAC6gAAABYAAAAC+wAAAAAAAAAA+wAAAAAAAAAAAAAAAA=="/>
 		<filehist>
 			<p n="..\GitPrep.prj\Explore.cpp"/>
 			<p n="..\..\AddrBookMerge\README.md"/>
-			<p n="..\GitPrep.prj\MainFrame.h"/>
 			<p n="..\GitPrep.prj\MyToolBar.h"/>
-			<p n="..\GitPrep.prj\MyToolBar.cpp"/>
+			<p n="..\..\CodeGen\README.md"/>
+			<p n="..\GitPrep.prj\MainFrame.h"/>
 			<p n="..\GitPrep.prj\MainFrame.cpp"/>
 			<p n="..\GitPrep.prj\GitPrep.rc"/>
+			<p n="..\GitPrep.prj\MyToolBar.cpp"/>
 			<p n="..\README.md"/>
-			<p n="..\..\CodeGen\README.md"/>
 		</filehist>
 		<allfilehist>
 			<p n="..\README.md"/>
