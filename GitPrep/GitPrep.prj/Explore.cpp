@@ -9,14 +9,16 @@
 #include <Shellapi.h>
 
 
-static TCchar* NotExlorableDir[] = {_T(".git"), _T(".vs"), _T("Debug"), _T("Junk"), _T("obj")};
-static TCchar* DeletableDir[]    = {_T("Data"), _T("Data01"), _T("Data02"), _T("Debug"),
-                                    _T(".vs"),  _T("Junk"),   _T("obj"),    _T("bin"), _T("Target")};
-static TCchar* DeletableExt[]    = {_T("obj"), _T("idb"), _T("pdb"), _T("tlog"), _T("lastbuildstate"),
-                                    _T("ilk"), _T("wixobj"), _T("log"), _T("tlh"), _T("tli"),
-                                    _T("iobj"), _T("ipdb"), _T("vtg"), _T("lib"), _T("res"),
-                                    _T("lastbuildstate"), _T("cache"), _T("wixpdb"),
-                                    _T("accdb"), _T("xlsx"), _T("csv"), _T("eml")};
+static TCchar* NotExlorableDir[] = {_T(".git"),   _T(".vs"),    _T("Debug"),  _T("Junk"),   _T("obj")};
+
+static TCchar* DeletableDir[]    = {_T("Data"),   _T("Data00"), _T("Data01"), _T("Data02"), _T("Debug"),
+                                    _T(".vs"),    _T("Junk"),   _T("obj"),    _T("bin"),    _T("Target")};
+
+static TCchar* DeletableExt[]    = {_T("obj"),    _T("idb"),    _T("pdb"),    _T("tlog"),
+                                    _T("lastbuildstate"),       _T("ilk"),    _T("wixobj"), _T("log"),
+                                    _T("tlh"),    _T("tli"),    _T("iobj"),   _T("ipdb"),   _T("vtg"),
+                                    _T("lib"),    _T("res"),    _T("lastbuildstate"),       _T("cache"),
+                                    _T("wixpdb"), _T("accdb"),  _T("xlsx"),   _T("csv"),    _T("eml")};
 
 
 void Explore::forDeletables(TCchar* path) {data.clear(); subDirs(path);}
