@@ -11,7 +11,6 @@ class MainFrame : public CMainFrm {
 
 CMFCMenuBar   menuBar;
 MyToolBar     toolBar;
-CMFCStatusBar statusBar;
 
 bool          isInitialized;
 
@@ -22,6 +21,7 @@ protected:                                          // create from serialization
   DECLARE_DYNCREATE(MainFrame)
 
 public:                                             // Overrides
+CMFCStatusBar statusBar;
 
   virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 

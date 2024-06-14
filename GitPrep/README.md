@@ -43,6 +43,10 @@ will demonstrate that the upload will work.  Start over to upload to Git.
 
 ## Update
 
+### Update 6/13/24
+
+Fix WinPos.
+
 ### Update 4/12/24 & $/18/24
 
 Improved the way Toolbars and Window Position and size are handled.
