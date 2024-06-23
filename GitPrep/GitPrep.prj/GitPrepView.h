@@ -52,6 +52,6 @@ public:
 
 #ifndef _DEBUG  // debug version in GitPrepView.cpp
 inline GitPrepDoc* GitPrepView::GetDocument() const
-   { return reinterpret_cast<GitPrepDoc*>(m_pDocument); }
+                                               {return reinterpret_cast<GitPrepDoc*>(m_pDocument);}
 #endif
 

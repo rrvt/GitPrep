@@ -70,8 +70,8 @@ void GitPrepView::onDisplayOutput() {dspNote.display(*this);}
 
 
 // The footer is injected into the printed output, so the output goes directly to the device.
-// The output streaming functions are very similar to NotePad's streaming functions so it should not
-// be a great hardship to construct a footer.
+// The output streaming functions are very similar to NotePad's streaming functions so it should
+// not be a great hardship to construct a footer.
 
 void GitPrepView::printFooter(DevBase& dev, int pageNo) {
   switch(doc()->dataSrc()) {
@@ -97,7 +97,6 @@ void GitPrepView::OnSetFocus(CWnd* pOldWnd) {
 
   switch(doc()->dataSrc()) {
     case NotePadSrc : break;
-
     }
   }
 
@@ -105,12 +104,9 @@ void GitPrepView::OnSetFocus(CWnd* pOldWnd) {
 // GitPrepView diagnostics
 
 #ifdef _DEBUG
-
-void GitPrepView::AssertValid() const {CScrollView::AssertValid();}
-
+void GitPrepView::AssertValid() const          {CScrollView::AssertValid();}
 void GitPrepView::Dump(CDumpContext& dc) const {CScrollView::Dump(dc);}
-                                             // non-debug version is inline
+                                                                     // non-debug version is inline
 GitPrepDoc* GitPrepView::GetDocument() const
-  {ASSERT(m_pDocument->IsKindOf(RUNTIME_CLASS(GitPrepDoc))); return (GitPrepDoc*)m_pDocument;}
-
+       {ASSERT(m_pDocument->IsKindOf(RUNTIME_CLASS(GitPrepDoc))); return (GitPrepDoc*)m_pDocument;}
 #endif //_DEBUG

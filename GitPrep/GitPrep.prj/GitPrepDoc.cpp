@@ -11,7 +11,7 @@
 #include "ResourceExtra.h"
 
 
-static TCchar* GitHub        = _T("C:\\Users\\rrvt\\AppData\\Local\\GitHubDesktop\\GitHubDesktop.exe");
+static TCchar* GitHub    = _T("C:\\Users\\rrvt\\AppData\\Local\\GitHubDesktop\\GitHubDesktop.exe");
 static TCchar* Section       = _T("Global");
 static TCchar* LastGitDir    = _T("LastGitDir");
 static TCchar* LastSavedFile = _T("LastSavedFile");
@@ -129,15 +129,8 @@ void GitPrepDoc::serialize(Archive& ar) {
 // GitPrepDoc diagnostics
 
 #ifdef _DEBUG
-void GitPrepDoc::AssertValid() const
-{
-  CDocument::AssertValid();
-}
-
-void GitPrepDoc::Dump(CDumpContext& dc) const
-{
-  CDocument::Dump(dc);
-}
+void GitPrepDoc::AssertValid() const          {CDocument::AssertValid();}
+void GitPrepDoc::Dump(CDumpContext& dc) const {CDocument::Dump(dc);}
 #endif //_DEBUG
 
 

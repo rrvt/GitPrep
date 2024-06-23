@@ -2,58 +2,61 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
 
 <Product Id="*" UpgradeCode="70214048-0A3E-48E9-A95B-199D9B376CC3" Language="1033"
-                  Manufacturer="Bob -- K6RWY" Name="GitPrep"
-                  Version="!(bind.fileVersion.GitPrep.cmp)"
-                  >
+                Manufacturer="Bob -- K6RWY" Name="GitPrep"
+                Version="!(bind.fileVersion.GitPrep.cmp)"
+                >
 
   <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine"
-                      Manufacturer="Bob -- K6RWY" Description="Installs GitPrep"
-                      Comments="Copyright (c) Bob -- K6RWY"
-                      />
+                Manufacturer="Bob -- K6RWY" Description="Installs GitPrep"
+                Comments="Copyright (c) Bob -- K6RWY"
+                />
 
   <MajorUpgrade Schedule="afterInstallInitialize"
-                                AllowDowngrades="no"   IgnoreRemoveFailure="no"   AllowSameVersionUpgrades="no"
-                                DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+                AllowDowngrades="no"   IgnoreRemoveFailure="no"   AllowSameVersionUpgrades="no"
+                DowngradeErrorMessage="A newer version of [ProductName] is already installed."
+                />
 
   <MediaTemplate EmbedCab="yes" />
 
-  <UI Id="My_InstallDir.ui">
-    <UIRef Id="WixUI_InstallDir" />
-    <Publish Dialog="WelcomeDlg" Control="Next" Event="NewDialog" Value="InstallDirDlg">
-      NOT Installed
-    </Publish>
-    <Publish Dialog="InstallDirDlg" Control="Back" Event="NewDialog" Value="WelcomeDlg" Order="2">
-      1
-    </Publish>
-  </UI>
+  <WixVariable Id="WixUILicenseRtf"
+                              Value="$(var.SolutionDir)..\..\Library\License\MITLicenseFile.rtf" />
+  <UI Id="My_InstallDir.ui"><UIRef Id="WixUI_InstallDir" /></UI>
 
   <WixVariable Id="WixUIDialogBmp" Value="C:\Program Files (x86)\WixApp\dialog.bmp"/>
   <WixVariable Id="WixUIBannerBmp" Value="C:\Program Files (x86)\WixApp\banner.bmp"/>
 
   <Icon     Id="GitPrep_Icon.exe" SourceFile="$(var.SolutionDir)..\GitPrep.prj\res\GitPrep.ico"/>
+  <Icon     Id="MITLicense_Icon.exe"
+                              SourceFile="$(var.SolutionDir)..\..\Library\License\MITLicense.ico"/>
   <Property Id="ARPPRODUCTICON"  Value="GitPrep_Icon.exe" />
 
   <Feature Id="ProductFeatures" Title="Main Product" Level="1" >
     <ComponentGroupRef Id="GitPrep.ftr"/>
+    <ComponentGroupRef Id="MITLicense.ftr"/>
     <ComponentGroupRef Id="Uninstall_GitPrep.ftr"/>
   </Feature>
 </Product>
 
 <Fragment>
-<ComponentGroup Id="GitPrep.ftr">
-  <ComponentRef Id="GitPrep.cmp"/>
-  <ComponentRef Id="Help.cmp"/>
-</ComponentGroup>
-<ComponentGroup Id="Uninstall_GitPrep.ftr">
-  <ComponentRef Id="Uninstall_GitPrep.cmp"/>
-</ComponentGroup>
+  <ComponentGroup Id="GitPrep.ftr">
+    <ComponentRef Id="GitPrep.cmp"/>
+    <ComponentRef Id="Help.cmp"/>
+  </ComponentGroup>
+  <ComponentGroup Id="MITLicense.ftr">
+    <ComponentRef Id="MIT_License.cmp"/>
+  </ComponentGroup>
+  <ComponentGroup Id="Uninstall_GitPrep.ftr">
+    <ComponentRef Id="Uninstall_GitPrep.cmp"/>
+  </ComponentGroup>
 </Fragment>
 
 <!--Directory structure-->
 <Fragment>
   <Directory Id="TARGETDIR" Name="SourceDir">
     <Directory Id="ProgramFilesFolder">
-      <Directory Id="GITPREP.PFF" Name="GitPrep" />
+      <Directory Id="GITPREP.PFF" Name="GitPrep">
+        <Directory Id="GitPrep_License.pff" Name="License" />
+      </Directory>
     </Directory>
 
     <Directory Id="ProgramMenuFolder">
@@ -61,7 +64,6 @@
     </Directory>
 
     <Directory Id="DesktopFolder" />
-
   </Directory>
 
   <Property Id="ApplicationFolderName" Value="GitPrep" />
@@ -70,8 +72,7 @@
 </Fragment>
 
 <Fragment>
-
-  <Component Id="GitPrep.cmp"  Guid="D3C9F1CF-CE3E-4CDC-AF21-7AD8D02CB372" Directory="GITPREP.PFF">
+  <Component Id="GitPrep.cmp" Guid="D3C9F1CF-CE3E-4CDC-AF21-7AD8D02CB372" Directory="GITPREP.PFF">
     <File Id="GitPrep.cmp" Source="$(var.SolutionDir)..\Release\GitPrep.exe" KeyPath="yes"/>
 
     <Shortcut Id               = "GitPrep.shc"
@@ -93,16 +94,30 @@
               />
   </Component>
 
-  <Component Id="Help.cmp"  Guid="732716AC-5E56-40EA-9C82-C25889C0B21D" Directory="GITPREP.PFF">
+  <Component Id="Help.cmp" Guid="732716AC-5E56-40EA-9C82-C25889C0B21D" Directory="GITPREP.PFF">
     <File Id="Help.cmp" Source="$(var.SolutionDir)..\Release\GitPrep.chm" KeyPath="yes"/>
   </Component>
-
 </Fragment>
 
 <Fragment>
+  <Component Id="MIT_License.cmp" Guid="1AC66DF1-8023-4C39-9843-A412EDAA619E"
+                                                                   Directory="GitPrep_License.pff">
+    <File Id="MIT_License.cmp"
+                Source="$(var.SolutionDir)..\..\Library\License\MITLicenseFile.rtf" KeyPath="yes"/>
 
-  <Component Id="Uninstall_GitPrep.cmp" 
-                                  Guid="8B734974-A60B-49F6-978E-B8F700E3CAD1" Directory="GitPrep.pmf">
+    <Shortcut Id               = "MITLicense.shc"
+              Name             = "MIT License"
+              Advertise        = "yes"
+              Directory        = "GitPrep.pmf"
+              WorkingDirectory = "GitPrep_License.pff"
+              Icon             = "MITLicense_Icon.exe"
+              />
+  </Component>
+</Fragment>
+
+<Fragment>
+  <Component Id="Uninstall_GitPrep.cmp" Guid="C9CC9AC1-3196-441A-915E-5D41ADF608F6"
+                                                                           Directory="GitPrep.pmf">
 
     <Shortcut Id               = "UninstallGitPrep.shc"
               Name             = "Uninstall GitPrep"
@@ -112,10 +127,8 @@
               Icon             = "GitPrep_Icon.exe"
               />
     <RemoveFolder Id="GitPrep.uni" Directory="GitPrep.pmf" On="uninstall"/>
-    <RegistryValue Root="HKCU" Key="Software\Uninstall_GitPrep.cmp" Name="installed"
-                   Type="integer" Value="1" KeyPath="yes"/>
+    <RegistryValue Root="HKCU" Key="Software\Uninstall_GitPrep.cmp"
+                                          Name="installed" Type="integer" Value="1" KeyPath="yes"/>
   </Component>
-
 </Fragment>
-
 </Wix>

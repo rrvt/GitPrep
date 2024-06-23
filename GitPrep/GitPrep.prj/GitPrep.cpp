@@ -48,14 +48,12 @@ BOOL GitPrep::InitInstance() {
   pDocTemplate = new CSingleDocTemplate(
     IDR_MAINFRAME,
     RUNTIME_CLASS(GitPrepDoc),
-    RUNTIME_CLASS(MainFrame),       // main SDI frame window
+    RUNTIME_CLASS(MainFrame),                             // main SDI frame window
     RUNTIME_CLASS(GitPrepView));
 
   if (!pDocTemplate) return FALSE;
 
   AddDocTemplate(pDocTemplate);
-
-//  EnableShellOpen(); RegisterShellFileTypes(TRUE);       // Enable DDE Execute open
 
   // Parse command line for standard shell commands, DDE, file open
 
