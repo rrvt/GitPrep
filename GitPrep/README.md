@@ -43,9 +43,13 @@ will demonstrate that the upload will work.  Start over to upload to Git.
 
 ## Update
 
+### Update 8/5/24
+
+Library update.
+
 ### Update 6/22/24
 
-Added an icon to the MIT License rtf file.
+Added the MIT License to the installation.
 
 ### Update 6/13/24
 
