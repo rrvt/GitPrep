@@ -6,7 +6,7 @@
 #include "FileName.h"
 #include "GitPrep.h"
 #include "GitPrepView.h"
-#include "IniFile.h"
+#include "IniFileEx.h"
 #include "Resource.h"
 #include "ResourceExtra.h"
 

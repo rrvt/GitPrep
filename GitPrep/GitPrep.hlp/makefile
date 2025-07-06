@@ -7,7 +7,7 @@ GitPrep.chm : *.htm GitPrep.hhp GitPrep.hhc App.css
 Clean.cln    :
   @echo "Cleaning"
   cd $(MAKEDIR)
-  del /F GitPrep.chm
+  if exist GitPrep.chm del /F GitPrep.chm
 
 
 Release/GitPrep.chm : GitPrep.chm
@@ -16,7 +16,7 @@ Release/GitPrep.chm : GitPrep.chm
 
 Release/Clean.cln    : Clean.cln
   cd $(MAKEDIR)\..\Release
-  del GitPrep.chm
+  if exist GitPrep.chm del /F GitPrep.chm
   cd $(MAKEDIR)
 
 
@@ -26,7 +26,7 @@ Debug/GitPrep.chm : GitPrep.chm
 
 Debug/Clean.cln    : Clean.cln
   cd $(MAKEDIR)\..\Debug
-  del GitPrep.chm
+  if exist GitPrep.chm del /F GitPrep.chm
   cd $(MAKEDIR)
 
 

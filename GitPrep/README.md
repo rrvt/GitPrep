@@ -43,6 +43,10 @@ will demonstrate that the upload will work.  Start over to upload to Git.
 
 ## Update
 
+### Update 7/5/25
+
+Factored IniFile into 3 classes.  Improved memory Leak Debugging.
+
 ### Update 12/25/24
 
 Split the library into DocLib and Library where DocLib supports the MFC Document/Library App

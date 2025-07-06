@@ -4,7 +4,7 @@
 #include "stdafx.h"
 #include "GitPrep.h"
 #include "AboutDlg.h"
-#include "IniFile.h"
+#include "IniFileEx.h"
 #include "MainFrame.h"
 #include "NotePad.h"
 #include "GitPrepDoc.h"
@@ -13,8 +13,8 @@
 #include "ResourceExtra.h"
 
 
-GitPrep theApp;                       // The one and only GitPrep object
-IniFile iniFile;
+GitPrep   theApp;                         // The one and only GitPrep object
+IniFileEx iniFile(theApp);
 
 
 // GitPrep
@@ -32,7 +32,7 @@ BOOL GitPrep::InitInstance() {
 
   CWinAppEx::InitInstance();
 
-  iniFile.setAppDataPath(m_pszHelpFilePath, *this);
+  iniFile.setAppDataPath(m_pszHelpFilePath);
 
   notePad.clear();
 
@@ -72,14 +72,7 @@ BOOL GitPrep::InitInstance() {
   }
 
 
-int GitPrep::ExitInstance() {
-
-#ifdef DebugMemoryLeaks
-  _CrtDumpMemoryLeaks();
-#endif
-
-  return CApp::ExitInstance();
-  }
+int GitPrep::ExitInstance() {return CApp::ExitInstance();}
 
 
 void GitPrep::OnHelp() {
