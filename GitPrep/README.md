@@ -43,6 +43,10 @@ will demonstrate that the upload will work.  Start over to upload to Git.
 
 ## Update
 
+### Update 9/13/25
+
+Add <directory name>.<extension only digits> to deletable list.  Change to accomodate ExpandableP.
+
 ### Update 7/5/25
 
 Factored IniFile into 3 classes.  Improved memory Leak Debugging.

@@ -65,6 +65,7 @@ private:
 
 
   bool   isDeletableDir( String& name);
+  bool   extIsDigits(    String& name);
   bool   isExplorableDir(String& name);
   bool   isDeletableFile(String& ext);
   bool   isBackupFile(String& name, String& ext);
@@ -73,7 +74,7 @@ private:
 
   // returns either a pointer to data (or datum) at index i in array or zero
 
-  ExplDsc* datum(int i) {return 0 <= i && i < nData() ? data[i].p : 0;}
+  ExplDsc* datum(int i) {return 0 <= i && i < nData() ? data[i] : 0;}
 
   int      nData()      {return data.end();}              // returns number of data items in array
 

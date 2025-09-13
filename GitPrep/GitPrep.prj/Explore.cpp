@@ -86,12 +86,27 @@ int i;
 
 
 bool Explore::isDeletableDir(String& name) {
-int n = noElements(DeletableDir);
-int i;
+String mainName = getMainName(name);
+int    n        = noElements(DeletableDir);
+int    i;
 
-  for (i = 0; i < n; i++) if (DeletableDir[i] == name) return true;
+  for (i = 0; i < n; i++) {
+    if (DeletableDir[i] == name) return true;
+    if (DeletableDir[i] == mainName && extIsDigits(name)) return true;
+    }
 
   return false;
+  }
+
+
+bool Explore::extIsDigits(String& name) {
+String ext = getExtension(name);
+int    n   = ext.length();   if (!n) return false;
+int    i;
+
+  for (i = 0; i < n; i++) {Tchar ch = ext[i];   if (ch < _T('0') || _T('9') < ch) return false;}
+
+  return true;
   }
 
 
