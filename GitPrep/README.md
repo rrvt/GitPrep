@@ -43,6 +43,10 @@ will demonstrate that the upload will work.  Start over to upload to Git.
 
 ## Update
 
+### Update 10/21/25
+
+Factored library into three parts, Library, Dialog, DocView.
+
 ### Update 9/13/25
 
 Add <directory name>.<extension only digits> to deletable list.  Change to accomodate ExpandableP.

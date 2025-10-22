@@ -33,7 +33,7 @@ public:
 
 extern GitPrep theApp;
 
-inline void         invalidate() {theApp.invalidate();}
+
 inline GitPrepDoc*  doc()        {return theApp.doc();}
 inline GitPrepView* view()       {return theApp.view();}
 inline MainFrame*   mainFrm()    {return theApp.mainFrm();}
