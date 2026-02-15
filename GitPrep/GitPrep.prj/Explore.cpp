@@ -9,13 +9,15 @@
 #include <Shellapi.h>
 
 
-static TCchar* NotExlorableDir[] = {_T(".git"),  _T(".vs"),    _T("Debug"),  _T("Junk"),
-                                    _T("obj")
+static TCchar* NotExlorableDir[] = {_T(".git"),     _T(".vs"),   _T("Debug"), _T("Debug.Win32"),
+                                    _T("Debug.x64"), _T("Junk"), _T("obj")
                                     };
 
-static TCchar* DeletableDir[]    = {_T("Data"),  _T("Data00"), _T("Data01"), _T("Data02"),
-                                    _T("Debug"), _T(".vs"),    _T("Junk"),   _T("obj"),
-                                    _T("bin"),   _T("Target")
+static TCchar* DeletableDir[]    = {_T("Data"),    _T("Data00"),  _T("Data01"),  _T("Data02"),
+                                    _T("Data.00"), _T("Data.01"), _T("Data,02"), _T("Data.03"),
+                                    _T("Debug"),   _T("Debug.Win32"), _T("Debug.x64"),
+                                    _T(".vs"),     _T("Junk"),    _T("obj"),     _T("builds"),
+                                    _T("bin"),     _T("Target")
                                     };
 
 static TCchar* DeletableExt[]    = {_T("obj"),   _T("idb"),    _T("pdb"),    _T("tlog"),

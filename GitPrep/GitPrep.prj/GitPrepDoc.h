@@ -5,6 +5,7 @@
 #include "CDoc.h"
 #include "Explore.h"
 #include "MainFrame.h"
+#include "PathDlgDsc.h"
 
 
 enum DataSource {NotePadSrc};

@@ -43,6 +43,14 @@ will demonstrate that the upload will work.  Start over to upload to Git.
 
 ## Update
 
+### Update 2/14/26
+
+Added "builds" directory to GitPrep so that LibCurl build directories are removed.
+
+### Update 2/10/26
+
+Add ability to build in 64 bit mode.  Add some directories to delete.
+
 ### Update 10/21/25
 
 Factored library into three parts, Library, Dialog, DocView.

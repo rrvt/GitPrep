@@ -10,29 +10,15 @@ Clean.cln    :
   if exist GitPrep.chm del /F GitPrep.chm
 
 
-Release/GitPrep.chm : GitPrep.chm
-  copy $(MAKEDIR)\GitPrep.chm  $(MAKEDIR)\..\Release\GitPrep.chm
+$(TgtFolder)/GitPrep.chm : GitPrep.chm
+  copy $(MAKEDIR)\GitPrep.chm  $(MAKEDIR)\..\$(TgtFolder)\GitPrep.chm
 
 
-Release/Clean.cln    : Clean.cln
-  cd $(MAKEDIR)\..\Release
+$(TgtFolder)/Clean.cln    : Clean.cln
+  cd $(MAKEDIR)\..\$(TgtFolder)
   if exist GitPrep.chm del /F GitPrep.chm
   cd $(MAKEDIR)
 
 
-Debug/GitPrep.chm : GitPrep.chm
-  copy $(MAKEDIR)\GitPrep.chm  $(MAKEDIR)\..\Debug\GitPrep.chm
-
-
-Debug/Clean.cln    : Clean.cln
-  cd $(MAKEDIR)\..\Debug
-  if exist GitPrep.chm del /F GitPrep.chm
-  cd $(MAKEDIR)
-
-
-Release/Rebuild.rbd : Release/Clean.cln Release/GitPrep.chm
-
-
-Debug/Rebuild.rbd   : Debug/Clean.cln Debug/GitPrep.chm
-
+$(TgtFolder)/Rebuild.rbd : $(TgtFolder)/Clean.cln $(TgtFolder)/GitPrep.chm
 
