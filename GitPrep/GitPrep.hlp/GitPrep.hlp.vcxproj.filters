@@ -22,9 +22,6 @@
     <None Include="App.css">
       <Filter>Help Files</Filter>
     </None>
-    <None Include="Templates\OneColumnPage.dwt">
-      <Filter>Help Files</Filter>
-    </None>
     <None Include="GitPrep.hhc">
       <Filter>Help Files</Filter>
     </None>
