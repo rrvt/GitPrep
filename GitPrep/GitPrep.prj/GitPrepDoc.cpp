@@ -27,6 +27,7 @@ BEGIN_MESSAGE_MAP(GitPrepDoc, CDoc)
   ON_COMMAND(ID_Explore,       &onExplore)
   ON_COMMAND(ID_Commit,        &onCommit)
   ON_COMMAND(ID_FindBig,       &onFindBig)
+//  ON_COMMAND(ID_ExplSSL,       &onExplSSL)
 
   ON_COMMAND(ID_File_Save,     &onFileSave)
 
@@ -64,6 +65,19 @@ void GitPrepDoc::onExplore() {
 
   display(NotePadSrc);
   }
+
+#if 0
+void GitPrepDoc::onExplSSL() {
+
+  if (path.isEmpty()) return;
+
+  explore.forSSLdeletables(path);
+
+  explore.display();
+
+  display(NotePadSrc);
+  }
+#endif
 
 
 void GitPrepDoc::onCommit() {

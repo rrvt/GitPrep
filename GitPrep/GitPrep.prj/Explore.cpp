@@ -9,24 +9,28 @@
 #include <Shellapi.h>
 
 
-static TCchar* NotExlorableDir[] = {_T(".git"),     _T(".vs"),   _T("Debug"), _T("Debug.Win32"),
-                                    _T("Debug.x64"), _T("Junk"), _T("obj")
-                                    };
+static TCchar* NotExlorableDir[]    = {_T(".git"),     _T(".vs"),   _T("Debug"), _T("Debug.Win32"),
+                                       _T("Debug.x64"), _T("Junk"), _T("obj")
+                                       };
 
-static TCchar* DeletableDir[]    = {_T("Data"),    _T("Data00"),  _T("Data01"),  _T("Data02"),
-                                    _T("Data.00"), _T("Data.01"), _T("Data,02"), _T("Data.03"),
-                                    _T("Debug"),   _T("Debug.Win32"), _T("Debug.x64"),
-                                    _T(".vs"),     _T("Junk"),    _T("obj"),     _T("builds"),
-                                    _T("bin"),     _T("Target")
-                                    };
+static TCchar* DeletableDir[]       = {_T("Data"),    _T("Data00"),  _T("Data01"),  _T("Data02"),
+                                       _T("Data.00"), _T("Data.01"), _T("Data,02"), _T("Data.03"),
+                                       _T("Debug"),   _T("Debug.Win32"), _T("Debug.x64"),
+                                       _T(".vs"),     _T("Junk"),    _T("builds"),
+                                       _T("bin"),     _T("Target")
+                                       };
 
-static TCchar* DeletableExt[]    = {_T("obj"),   _T("idb"),    _T("pdb"),    _T("tlog"),
-                                    _T("lastbuildstate"),      _T("ilk"),    _T("wixobj"),
-                                    _T("log"),   _T("tlh"),    _T("tli"),    _T("iobj"),
-                                    _T("ipdb"),  _T("vtg"),    _T("lib"),    _T("res"),
-                                    _T("lastbuildstate"),      _T("cache"),  _T("wixpdb"),
-                                    _T("accdb"), _T("xlsx"),   _T("csv"),    _T("eml")
-                                    };
+static TCchar* DeletableExt[]       = {_T("obj"),   _T("idb"),    _T("pdb"),    _T("tlog"),
+                                       _T("lastbuildstate"),      _T("ilk"),    _T("wixobj"),
+                                       _T("log"),   _T("tlh"),    _T("tli"),    _T("iobj"),
+                                       _T("ipdb"),  _T("vtg"),    _T("lib"),    _T("res"),
+                                       _T("lastbuildstate"),      _T("cache"),  _T("wixpdb"),
+                                       _T("accdb"), _T("xlsx"),   _T("csv"),    _T("eml")
+                                       };
+
+static TCchar* SSLdelatableExt[]    = {_T("d"), _T("html"), _T("pc")};
+
+static TCchar* SSLnotDeletableExt[] = {_T("csv"), _T("eml")};
 
 
 void Explore::forDeletables(TCchar* path) {data.clear(); subDirs(path);}
@@ -36,6 +40,8 @@ void Explore::subDirs(TCchar* path) {
 FileSrch dirs;
 String   dir;
 String   name;
+
+  isSSLfolder = sslFolder.push(path);
 
   dirs.findAllSubDirs(path);
 
@@ -49,6 +55,70 @@ String   name;
 
     findDeletables(dir);   subDirs(dir);
     }
+
+  isSSLfolder = sslFolder.pop();
+  }
+
+
+bool Explore::isDeletableDir(String& name) {
+String mainName = getMainName(name);
+int    n        = noElements(DeletableDir);
+int    i;
+
+  for (i = 0; i < n; i++) {
+    if (DeletableDir[i] == name) return true;
+    if (DeletableDir[i] == mainName && extIsDigits(name)) return true;
+    }
+
+  if (isSSLfolder && mainName == _T("test-runs")) return true;
+
+  return false;
+  }
+
+
+void Explore::findDeletables(TCchar* path) {
+FileSrch files;
+String   filePath;
+String   name;
+
+String   ext;
+
+  files.findAllFiles(path);
+
+  while (files.getName(filePath)) {
+
+    name = removePath(filePath);   ext = getExtension(name);
+
+    if (isSSLfolder) {
+
+      if (ext == _T("csv")) continue;                   // leave in SSL Folder
+      if (isSSLdeletableFile(ext)) {ExplDsc dsc;   dsc.set(filePath);   data = dsc;   continue;}
+      if (isNotSSLdeletable(ext)) continue;
+      }
+
+    if (isDeletableFile(ext))      {ExplDsc dsc;   dsc.set(filePath);   data = dsc;   continue;}
+    if (isBackupFile(name, ext))   {ExplDsc dsc;   dsc.set(filePath);   data = dsc;}
+    }
+  }
+
+
+bool Explore::isSSLdeletableFile(String& ext) {
+int n = noElements(SSLdelatableExt);
+int i;
+
+  for (i = 0; i < n; i++) if (SSLdelatableExt[i] == ext) return true;
+
+  return false;
+  }
+
+
+bool Explore::isNotSSLdeletable(String& ext) {
+int n = noElements(SSLnotDeletableExt);
+int i;
+
+  for (i = 0; i < n; i++) if (SSLnotDeletableExt[i] == ext) return true;
+
+  return false;
   }
 
 
@@ -76,7 +146,6 @@ int      n = 0;
   }
 
 
-
 bool Explore::isExplorableDir(String& name) {
 int n = noElements(NotExlorableDir);
 int i;
@@ -84,20 +153,6 @@ int i;
   for (i = 0; i < n; i++) if (NotExlorableDir[i] == name) return false;
 
   return true;
-  }
-
-
-bool Explore::isDeletableDir(String& name) {
-String mainName = getMainName(name);
-int    n        = noElements(DeletableDir);
-int    i;
-
-  for (i = 0; i < n; i++) {
-    if (DeletableDir[i] == name) return true;
-    if (DeletableDir[i] == mainName && extIsDigits(name)) return true;
-    }
-
-  return false;
   }
 
 
@@ -109,27 +164,6 @@ int    i;
   for (i = 0; i < n; i++) {Tchar ch = ext[i];   if (ch < _T('0') || _T('9') < ch) return false;}
 
   return true;
-  }
-
-
-void Explore::findDeletables(TCchar* path) {
-FileSrch files;
-String   filePath;
-String   name;
-
-String   ext;
-
-  files.findAllFiles(path);
-
-  while (files.getName(filePath)) {
-
-    name = removePath(filePath);
-
-    ext = getExtension(name);
-
-    if (isDeletableFile(ext))    {ExplDsc dsc;   dsc.set(filePath);   data = dsc;   continue;}
-    if (isBackupFile(name, ext)) {ExplDsc dsc;   dsc.set(filePath);   data = dsc;}
-    }
   }
 
 
@@ -268,4 +302,63 @@ Tchar          ch;
                           {notePad << _T("An Error in Deleting: ") << path << nCrlf; return false;}
   return true;
   }
+
+
+
+///////////------------------
+#if 0
+void Explore::forSSLdeletables(TCchar* path) {
+String   s = path;
+
+  if (s.find(_T("openssl.")) < 0) return;
+
+  data.clear();   sslDirs(path);
+  }
+
+
+void Explore::sslDirs(TCchar* path) {
+FileSrch dirs;
+String   dir;
+String   name;
+
+  dirs.findAllSubDirs(path);
+
+  while (dirs.getName(dir)) {
+
+    name = getDirName(dir);
+
+    if (isSSLdeletableDir(name)) {ExplDsc dsc;   dsc.set(dir, true);   data = dsc;   continue;}
+
+//  if (!isExplorableDir(name)) continue;
+
+    findSSLdeletables(dir);   sslDirs(dir);
+    }
+  }
+
+
+bool Explore::isSSLdeletableDir(String& name)  {
+String mainName = getMainName(name);
+
+  return mainName== _T("test-runs");
+  }
+
+
+void Explore::findSSLdeletables(String& path) {
+FileSrch files;
+String   filePath;
+String   name;
+String   ext;
+
+  files.findAllFiles(path);
+
+  while (files.getName(filePath)) {
+
+    name = removePath(filePath);
+
+    ext = getExtension(name);
+
+    if (isSSLdeletableFile(ext))    {ExplDsc dsc;   dsc.set(filePath);   data = dsc;   continue;}
+    }
+  }
+#endif
 

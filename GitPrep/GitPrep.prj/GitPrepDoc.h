@@ -58,6 +58,7 @@ public:
   afx_msg void onExplore();
   afx_msg void onCommit();
   afx_msg void onFindBig();
+//  afx_msg void onExplSSL();
   afx_msg void onFileSave();
   };
 

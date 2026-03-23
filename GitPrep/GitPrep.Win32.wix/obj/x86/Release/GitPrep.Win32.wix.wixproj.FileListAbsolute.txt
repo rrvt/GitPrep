@@ -1,0 +1,4 @@
+D:\Sources\GitPrep\Release.Win32\GitPrep.msi
+D:\Sources\GitPrep\GitPrep.Win32.wix\obj\x86\Release\GitPrep.Win32.wix.wixproj.CoreCompileInputs.cache
+D:\Sources\GitPrep\GitPrep.Win32.wix\obj\x86\Release\GitPrep.msi
+D:\Sources\GitPrep\GitPrep.Win32.wix\obj\x86\Release\GitPrep.Win32.wix.wixproj.BindTracking-neutral.txt

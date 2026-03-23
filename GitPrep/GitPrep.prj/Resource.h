@@ -13,10 +13,11 @@
 #define ID_Explore                      401
 #define ID_Commit                       402
 #define ID_FindBig                      403
-#define ID_Options                      404
-#define ID_File_Save                    405
-#define ID_App_About                    406
-#define ID_Help                         407
+//#define ID_ExplSSL                      404
+#define ID_Options                      405
+#define ID_File_Save                    406
+#define ID_App_About                    407
+#define ID_Help                         408
 
 // Next default values for new objects
 //

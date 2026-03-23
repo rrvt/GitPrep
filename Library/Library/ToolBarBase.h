@@ -15,10 +15,8 @@
 #include "TBButton.h"
 #include "TBCboBoxes.h"
 #include "TBEditBox.h"
+#include "TBMenu.h"                       // Use for Menus in Doc/View applications
 #include "ToolBarDim.h"
-
-class  TBButton;
-class  TBMenu;
 
 
 class ToolBarBase : public CMFCToolBar {
@@ -57,24 +55,29 @@ protected:
   CString   getText(TBEditBox&  editBox) {return editBox.getText();}
 
   // The following Menu items are usefule only in Doc/View (e.g. MainFrame) apps
-
-  bool      add(TBMenu&  button, uint id, int           idr,              TCchar* caption);
-  bool      add(TBMenu&  button, uint id, int           idr,              int     index);
-  bool      add(TBMenu&  button, uint id, const CbxItem cbxItem[], int n, TCchar* caption);
+  bool      add(TBMenu&  mnu, uint id, int      idr,              TCchar* caption);
+  bool      add(TBMenu&  mnu, uint id, int      idr,              int     index);
+  bool      add(TBMenu&  mnu, uint id, CCbxItem cbxItem[], int n, TCchar* caption);
 
   // Combo Box Features (Doc/View and Dialog Box Apps)
 
   TBCboBox& createCboBox(uint id) {return tbCboBoxes.create(id);}
-  void      clearCbo(uint id);
-  bool      addCboBox(uint id, int noChars);
+  void      clearCbo(    uint id);
+  bool      addCboBox(   uint id, int noChars);
+  bool      setCboItems( uint id, uint idr);
+  bool      setCboItems( uint id, CCbxItem cbxItem[], int n);
+
   void      setCboCaption(TBCboBox& cbo, TCchar* caption)
-                              {cbo.set(caption);           cbo.update();   AdjustLayout();}
+                                              {cbo.set(caption);   cbo.update();   AdjustLayout();}
+  void      setImage(TBCboBox& cbo, int toolBarIndex)
+                                    {cbo.setImage(toolBarIndex);   cbo.update();   AdjustLayout();}
+  void      setImage(TBMenu&   mnu, int toolBarIndex)
+                                    {mnu.setImage(toolBarIndex); /*mnu.update();*/ AdjustLayout();}
+
   void      setCboWthPrct(TBCboBox& cbo, int prcnt)
                               {cbo.setWthPercent(prcnt);   cbo.update();   AdjustLayout();}
   void      setCboHeight( TBCboBox& cbo) {cbo.setHeight();}
 
-  bool      setCboItems(uint id, uint idr);
-  bool      setCboItems(uint id, CCbxItem cbxItem[], int n);
   void      dispatch(TBCboBox& cbo);
 
   // Manipulate tuple in the ComboBox

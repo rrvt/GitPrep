@@ -3,7 +3,6 @@
 
 #include "pch.h"
 #include "ToolBarBase.h"
-#include "TBMenu.h"                       // Use for Menus in Doc/View applications
 #include "WinPos.h"
 #ifdef DsplyHistory
 #include "History.h"                      // Debug Only
@@ -75,18 +74,18 @@ bool ToolBarBase::add(TBEditBox& button, uint id, int noChars) {
   }
 
 
-bool ToolBarBase::add(TBMenu&  button, uint id, int idr, TCchar* caption) {
-  bool rslt = ReplaceButton(id, *button.install(idr, caption)) > 0;   return rslt;
+bool ToolBarBase::add(TBMenu&  mnu, uint id, int idr, TCchar* caption) {
+  bool rslt = ReplaceButton(id, *mnu.install(idr, caption)) > 0;   return rslt;
   }
 
 
-bool ToolBarBase::add(TBMenu&  button, uint id, int idr, int index) {
-  bool rslt = ReplaceButton(id, *button.install(idr, index)) > 0;   return rslt;
+bool ToolBarBase::add(TBMenu& mnu, uint id, int idr, int index) {
+  bool rslt = ReplaceButton(id, *mnu.install(idr, index)) > 0;   return rslt;
   }
 
 
-bool ToolBarBase::add(TBMenu&  button, uint id, const CbxItem cbxItem[], int n, TCchar* caption) {
-  bool rslt = ReplaceButton(id, *button.install(cbxItem, n, caption)) > 0;   return rslt;
+bool ToolBarBase::add(TBMenu& mnu, uint id, CCbxItem cbxItem[], int n, TCchar* caption) {
+  bool rslt = ReplaceButton(id, *mnu.install(cbxItem, n, caption)) > 0;   return rslt;
   }
 
 

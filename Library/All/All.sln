@@ -70,8 +70,7 @@ Global
 		{12084586-A769-4348-B54D-336FA036A1FB}.Release|Win32.ActiveCfg = Release|x64
 		{12084586-A769-4348-B54D-336FA036A1FB}.Release|x64.ActiveCfg = Release|x64
 		{12084586-A769-4348-B54D-336FA036A1FB}.Release|x64.Build.0 = Release|x64
-		{D0FDD57B-5315-4E31-B0C9-FCFB7A0285F6}.Debug|Win32.ActiveCfg = Debug|Win32
-		{D0FDD57B-5315-4E31-B0C9-FCFB7A0285F6}.Debug|Win32.Build.0 = Debug|Win32
+		{D0FDD57B-5315-4E31-B0C9-FCFB7A0285F6}.Debug|Win32.ActiveCfg = Debug|x64
 		{D0FDD57B-5315-4E31-B0C9-FCFB7A0285F6}.Debug|x64.ActiveCfg = Debug|x64
 		{D0FDD57B-5315-4E31-B0C9-FCFB7A0285F6}.Debug|x64.Build.0 = Debug|x64
 		{D0FDD57B-5315-4E31-B0C9-FCFB7A0285F6}.Release|Win32.ActiveCfg = Release|Win32
@@ -91,7 +90,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		                  SolutionGuid = {EC411953-59A7-4311-8520-8BCF9007D64A}
 		SolutionGuid = {58BB67CD-9FF1-404D-87A0-BD364F1F4DFC}
+		                  SolutionGuid = {EC411953-59A7-4311-8520-8BCF9007D64A}
 	EndGlobalSection
 EndGlobal

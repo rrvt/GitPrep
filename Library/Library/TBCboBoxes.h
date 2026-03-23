@@ -29,6 +29,7 @@ String caption;
 
   void      set(int     noChars);
   void      set(TCchar* caption);
+  void      setImage(int imageIndex) {SetImage(imageIndex);}
   void      resetCaption() {set(caption);}
   void      setWthPercent(int prcnt) {percent = prcnt ? prcnt : 12;}
   void      setHeight();

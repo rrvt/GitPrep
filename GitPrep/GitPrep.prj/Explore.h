@@ -5,6 +5,7 @@
 #include "ExpandableP.h"
 #include "IterT.h"
 #include "NotePad.h"
+#include "SSLfolder.h"
 
 
 class ExplDsc {
@@ -40,6 +41,9 @@ typedef IterT<Explore, ExplDsc> ExplIter;
 
 class Explore {
 
+SSLfolder                                 sslFolder;
+bool                                      isSSLfolder{false};
+
 ExpandableP<ExplDsc, String, ExplDscP, 2> data;
 
 public:
@@ -48,6 +52,7 @@ public:
  ~Explore() { }
 
   void   forDeletables(TCchar* path);
+  void   forSSLDeletables(TCchar* path);
 
   int    delEntities();
   int    findBigEntities(TCchar* path);
@@ -63,6 +68,8 @@ private:
   int    findBigDirs( TCchar* path);
   int    findBigFiles(TCchar* path);
 
+  bool   isSSLdeletableFile(String& ext);
+  bool   isNotSSLdeletable(String& ext);
 
   bool   isDeletableDir( String& name);
   bool   extIsDigits(    String& name);
@@ -82,4 +89,16 @@ private:
 
   friend typename ExplIter;
   };
+
+
+
+//////////-------------------
+#if 0
+
+  //  void   forSSLdeletables(TCchar* path);
+  bool   setSSLpath(TCchar* path);
+  void   sslDirs(TCchar* path);
+  bool   isSSLdeletableDir(String& name);
+  void   findSSLdeletables(String& path);
+#endif
 

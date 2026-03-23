@@ -1,45 +1,43 @@
 <vpwhist>
 	<active_config>
-		<p n="..\GitPrep.prj\GitPrep.vpj" v=",Release|Win32"/>
+		<p n="..\GitPrep.prj\GitPrep.vpj" v=",Release|x64"/>
 		<p n="..\..\Library\Library.prj\Library.vpj" v=""/>
 		<p n="..\GitPrep.hlp\GitPrep.hlp.vpj" v=",Debug|Win32"/>
 		<p n="..\GitPrep.wix\GitPrep.wix.vpj" v=",Debug|x86"/>
 		<p n="..\..\Library\Library\Library.vpj" v=",Debug|Win32"/>
 		<p n="..\..\Library\DocView\DocView.vpj" v=",Debug|Win32"/>
 		<p n="..\GitPrep.Win32.wix\GitPrep.Win32.wix.vpj" v=",Debug|x86"/>
-		<p n="..\GitPrep.x64.wix\GitPrep.x64.wix.vpj" v=",Debug|x86"/>
+		<p n="..\GitPrep.x64.wix\GitPrep.x64.wix.vpj" v=""/>
 	</active_config>
 	<global>
 		<p n="CurrentProject" v="..\GitPrep.prj\GitPrep.vpj"/>
-		<p n="ActiveSolutionConfig" v="Release|Win32"/>
+		<p n="ActiveSolutionConfig" v="Release|x64"/>
 	</global>
 	<project_dates>
-		<p n="..\GitPrep.prj\GitPrep.vcxproj" v="20260306215345541"/>
+		<p n="..\GitPrep.prj\GitPrep.vcxproj" v="20260323050906843"/>
 		<p n="..\GitPrep.hlp\GitPrep.hlp.vcxproj" v="20260306215345531"/>
-		<p n="..\..\Library\Library\Library.vcxproj" v="20260312015426747"/>
-		<p n="..\..\Library\DocView\DocView.vcxproj" v="20260304052929059"/>
-		<p n="..\GitPrep.Win32.wix\GitPrep.Win32.wix.wixproj" v="20260306215447465"/>
-		<p n="..\GitPrep.x64.wix\GitPrep.x64.wix.wixproj" v="20260314003215429"/>
+		<p n="..\..\Library\Library\Library.vcxproj" v="20260322010534695"/>
+		<p n="..\..\Library\DocView\DocView.vcxproj" v="20260320195304422"/>
+		<p n="..\GitPrep.Win32.wix\GitPrep.Win32.wix.wixproj" v="20260323052440005"/>
+		<p n="..\GitPrep.x64.wix\GitPrep.x64.wix.wixproj" v="20260323052439974"/>
 	</project_dates>
 	<tree_expansion scroll="0">
 		<p n="..\..\Library\DocView\DocView.vcxproj" v="+@"/>
 		<p n="..\GitPrep.hlp\GitPrep.hlp.vcxproj" v="+@"/>
 		<p n="..\GitPrep.prj\GitPrep.vcxproj" v="-@">
-			<p n="Header Files" v="+"/>
+			<p n="Header Files" v="-"/>
 			<p n="Resource Files" v="-"/>
-			<p n="Source Files" v="+"/>
+			<p n="Source Files" v="-"/>
 		</p>
 		<p n="..\GitPrep.Win32.wix\GitPrep.Win32.wix.wixproj" v="+@"/>
-		<p n="..\GitPrep.x64.wix\GitPrep.x64.wix.wixproj" v="-@">
-			<p n="Junk" v="+"/>
-		</p>
+		<p n="..\GitPrep.x64.wix\GitPrep.x64.wix.wixproj" v="+@"/>
 		<p n="..\..\Library\Library\Library.vcxproj" v="+@"/>
 	</tree_expansion>
 	<state>
 		<monitor_configs>
 			<monitor_config v="0 0 2560 1440">
-				<screen v="2560 1440 620 0 1822 1400 0 0 N 0 0 0 0 1557 910 0"/>
-				<mdistate v="AAAAAwAAAAIAAAAH2gAAAAIAMAAAAAAAAABZAAAHHQAABVoAAAAAAAAAAAAACf8AAAWfAAAAAuoAAAKkAAAAAvsAAAAGAAAABgAAAAEAAAADAAAAAgAAAAAAAAAFAAAABPsAAAAGAAAABgAAAAEAAAACAAAAAwAAAAAAAAAFAAAABPwAAABnAAAAAFoANAA6ADoAOgBEADoAXABTAG8AdQByAGMAZQBzAFwARwBpAHQAUAByAGUAcABcAEcAaQB0AFAAcgBlAHAALgBwAHIAagBcAEcAaQB0AFAAcgBlAHAALgByAGMAAP////8AAPwAAABxAAAAAGQANwA6ADoAOgBEADoAXABTAG8AdQByAGMAZQBzAFwARwBpAHQAUAByAGUAcABcAEcAaQB0AFAAcgBlAHAALgB4ADYANAAuAHcAaQB4AFwAUAByAG8AZAB1AGMAdAAuAHcAeABzAQD/////AQH8AAAAWQAAAABMADYAOgA6ADoARAA6AFwAUwBvAHUAcgBjAGUAcwBcAEEAZABkAHIAQgBvAG8AawBNAGUAcgBnAGUAXABSAEUAQQBEAE0ARQAuAG0AZAAA/////wAA/AAAAE0AAAAAQAA1ADoAOgA6AEQAOgBcAFMAbwB1AHIAYwBlAHMAXABHAGkAdABQAHIAZQBwAFwAUgBFAEEARABNAEUALgBtAGQAAP////8AAPwAAABjAAAAAFYAMgA6ADoAOgBEADoAXABTAG8AdQByAGMAZQBzAFwARwBpAHQAUAByAGUAcABcAEcAaQB0AFAAcgBlAHAALgBwAHIAagBcAHMAdABkAGEAZgB4AC4AaAAA/////wAA/AAAAF8AAAAAUgAzADoAOgA6AEQAOgBcAFMAbwB1AHIAYwBlAHMAXABMAGkAYgByAGEAcgB5AFwATABpAGIAcgBhAHIAeQBcAFQAQgBCAHUAdAB0AG8AbgAuAGgAAP////8AAAAAAADaAAAAHgAwAC0AMQA0ADMAMwAxADEAOQA3ADkAMAAyADYAMgBOAAADAgAAAU4AAAgBAAADjQAAAAAAAAAAAAAJ/wAABZ8AAAAC6gAAABYAAAAC+wAAAAAAAAAA+wAAAAAAAAAAAAAAANoAAAAeADAALQAxADQAMwAxADUANgAxADEANgA5ADEAMwAxAE4AAAPxAAAA+gAAB3wAAASMAAAAAAAAAAAAAAn/AAAFnwAAAALqAAAAFgAAAAL7AAAAAAAAAAD7AAAAAAAAAAAAAAAA2gAAAB4AMAAtADEANAA3ADcAMgA2ADEAMQAxADAAMQAzADYATgAAA98AAAB2AAAHDwAAA0EAAAAAAAAAAAAACf8AAAWfAAAAAuoAAAAWAAAAAvsAAAAAAAAAAPsAAAAAAAAAAAAAAADaAAAAHgAwAC0AMQA1ADkAMQA3ADMAMgA1ADcANwA2ADAAOABOAAAD+AAAAeYAAAd+AAACagAAAAAAAAAAAAAJ/wAABZ8AAAAC6gAAABYAAAAC+wAAAAAAAAAA+wAAAAAAAAAAAAAAANoAAAAeADAALQAxADUAOQAxADcAMwA1ADkANQAyADAANgA1AE4AAAQkAAAAFAAABToAAAVKAAAAAAAAAAAAAAn/AAAFnwAAAALqAAAAFgAAAAL7AAAAAAAAAAD7AAAAAAAAAAAAAAAA2gAAAB4AMQAtADEANAAzADEANQA4ADUANAAxADQAMwA2ADcATgAAAeAAAAFEAAAG3wAAA4MAAAAAAAAAAAAACf8AAAWfAAAAAuoAAAAWAAAAAvsAAAAAAAAAAPsAAAAAAAAAAAAAAAA="/>
+				<screen v="2560 1440 824 7 1731 1401 0 0 N 0 0 0 0 1408 934 0"/>
+				<mdistate v="AAAAAwAAAAIAAAAC2gAAAAIAMAAAAAAAAABZAAAGwgAABVsAAAAAAAAAAAAACf8AAAWfAAAAAuoAAASeAAAAAvsAAAAKAAAACgAAAAgAAAACAAAABwAAAAYAAAAFAAAAAAAAAAEAAAADAAAABAAAAAn7AAAACgAAAAoAAAAGAAAABQAAAAcAAAAIAAAAAAAAAAEAAAAEAAAACQAAAAIAAAAD/AAAAGkAAAAAXAA3ADoAOgA6AEQAOgBcAFMAbwB1AHIAYwBlAHMAXABHAGkAdABQAHIAZQBwAFwARwBpAHQAUAByAGUAcAAuAHAAcgBqAFwARQB4AHAAbABvAHIAZQAuAGMAcABwAAD/////AAD8AAAAZQAAAABYADYAOgA6ADoARAA6AFwAUwBvAHUAcgBjAGUAcwBcAEcAaQB0AFAAcgBlAHAAXABHAGkAdABQAHIAZQBwAC4AcAByAGoAXABFAHgAcABsAG8AcgBlAC4AaAAA/////wAA/AAAAGcAAAAAWgAzADoAOgA6AEQAOgBcAFMAbwB1AHIAYwBlAHMAXABHAGkAdABQAHIAZQBwAFwARwBpAHQAUAByAGUAcAAuAHAAcgBqAFwARwBpAHQAUAByAGUAcAAuAHIAYwAA/////wAA/AAAAG8AAAAAYgAyADoAOgA6AEQAOgBcAFMAbwB1AHIAYwBlAHMAXABHAGkAdABQAHIAZQBwAFwARwBpAHQAUAByAGUAcAAuAHAAcgBqAFwARwBpAHQAUAByAGUAcABEAG8AYwAuAGMAcABwAAD/////AAD8AAAAawAAAABeADUAOgA6ADoARAA6AFwAUwBvAHUAcgBjAGUAcwBcAEcAaQB0AFAAcgBlAHAAXABHAGkAdABQAHIAZQBwAC4AcAByAGoAXABHAGkAdABQAHIAZQBwAEQAbwBjAC4AaAAA/////wAA/AAAAG8AAAAAYgAxADEAOgA6ADoARAA6AFwAUwBvAHUAcgBjAGUAcwBcAEcAaQB0AFAAcgBlAHAAXABHAGkAdABQAHIAZQBwAC4AcAByAGoAXABNAGEAaQBuAEYAcgBhAG0AZQAuAGMAcABwAAD/////AAD8AAAAawAAAABeADEAMAA6ADoAOgBEADoAXABTAG8AdQByAGMAZQBzAFwARwBpAHQAUAByAGUAcABcAEcAaQB0AFAAcgBlAHAALgBwAHIAagBcAE0AYQBpAG4ARgByAGEAbQBlAC4AaAAA/////wAA/AAAAGkAAAAAXAA5ADoAOgA6AEQAOgBcAFMAbwB1AHIAYwBlAHMAXABHAGkAdABQAHIAZQBwAFwARwBpAHQAUAByAGUAcAAuAHAAcgBqAFwATQB5AFQAbwBvAGwAQgBhAHIALgBoAAD/////AAD8AAAATQAAAABAADgAOgA6ADoARAA6AFwAUwBvAHUAcgBjAGUAcwBcAEcAaQB0AFAAcgBlAHAAXABSAEUAQQBEAE0ARQAuAG0AZAEA/////wAB/AAAAGcAAAAAWgA0ADoAOgA6AEQAOgBcAFMAbwB1AHIAYwBlAHMAXABHAGkAdABQAHIAZQBwAFwARwBpAHQAUAByAGUAcAAuAHAAcgBqAFwAUgBlAHMAbwB1AHIAYwBlAC4AaAAA/////wAAAAAAANoAAAAeADAALQAxADcANwA0ADIAMQAxADQAMQA5ADIAMQA5AE4AAAOBAAAAAAAABn0AAAMKAAAAAAAAAAAAAAn/AAAFnwAAAALqAAAAFgAAAAL7AAAAAAAAAAD7AAAAAAAAAAAAAAAA"/>
 				<debug_layout version="1" state="N" fullscreen="0">
 					<toolwindowinfo>
 						<p n="_tbannotations_browser_form" f="0"/>
@@ -184,7 +182,7 @@
 						<p n="_tbinteractive_form" f="8"/>
 						<p n="_tbmessages_browser_form" f="8"/>
 						<p n="_tbnotification_form" f="36"/>
-						<p n="_tbopen_form" f="44"/>
+						<p n="_tbopen_form" f="40"/>
 						<p n="_tboutputwin_form" f="8"/>
 						<p n="_tbproctree_form" f="8"/>
 						<p n="_tbprojects_form" f="8"/>
@@ -202,14 +200,23 @@
 						<p n="_tbunittest_form" f="0"/>
 					</toolwindowinfo>
 					<toolwindows>
-						<p n="_tbprojects_form" t="1"/>
-						<p n="_tbsearch_form" t="1"/>
+						<p n="_tbcbrowser_form" t="0"/>
+						<p n="_tbclass_form" t="0"/>
+						<p n="_tbmessages_browser_form" t="0"/>
+						<p n="_tbopen_form" t="0"/>
+						<p n="_tboutputwin_form" t="0"/>
+						<p n="_tbproctree_form" t="0"/>
+						<p n="_tbprojects_form" t="0"/>
+						<p n="_tbsearch_form" t="0"/>
 						<p n="_tbshell_form" t="0"/>
-						<p n="_tbtagrefs_form" t="1"/>
+						<p n="_tbtagrefs_form" t="0"/>
+						<p n="_tbtagwin_form" t="0"/>
+						<p n="_tbterminal_form" t="0"/>
 					</toolwindows>
-					<mdistate v="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"/>
-					<toolbars state="AAAA/wAAAAD9AAAAAAAABx4AAAUCAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAQAFMAdABhAG4AZABhAHIAZAEAAAAA/////wAAAAAAAAAA">
+					<mdistate v="AAAAAwAAAAEAAAAC2gAAAAIAMAAAAAAAAABZAAAGwgAABVsAAAAAAAAAAAAACf8AAAWfAAAAAesAAAS6AAAAAPsAAAACAAAAAgAAAAEAAAAA+wAAAAIAAAACAAAAAAAAAAH9AAABoQAAAAAaADoAOgA6AC8AdgBEAG8AYwBrAEEAcgBlAGEBAAAAAT0AAAAAAAL7AAAABQAAAAUAAAAAAAAABAAAAAMAAAACAAAAAfsAAAAFAAAABQAAAAAAAAABAAAAAgAAAAMAAAAE/AAAAD0AAAAAKAAwADoAOgA6AF8AdABiAHAAcgBvAGoAZQBjAHQAcwBfAGYAbwByAG0BAP////8AAP///////////AAAAD0AAAAAKAAwADoAOgA6AF8AdABiAHAAcgBvAGMAdAByAGUAZQBfAGYAbwByAG0AAP////8AAP///////////AAAADcAAAAAIgAwADoAOgA6AF8AdABiAGMAbABhAHMAcwBfAGYAbwByAG0AAP////8AAP///////////AAAAD0AAAAAKAAwADoAOgA6AF8AdABiAGMAYgByAG8AdwBzAGUAcgBfAGYAbwByAG0AAP////8AAP///////////AAAADUAAAAAIAAwADoAOgA6AF8AdABiAG8AcABlAG4AXwBmAG8AcgBtAAD/////AAD///////////0AAALFAAAAABoAOgA6ADoALwB2AEQAbwBjAGsAQQByAGUAYQEAAAAGGAABAAAAAfsAAAACAAAAAgAAAAAAAAAB+wAAAAIAAAACAAAAAQAAAAD8AAAAKQAAAAAcADoAOgA6AE0ARABJAEEAUgBFAEEAVABJAEwARQEAAAADpwAB/QAAAkUAAAAAGgA6ADoAOgAvAHYARABvAGMAawBBAHIAZQBhAQAAAAFXAAAAAAAC+wAAAAcAAAAHAAAAAAAAAAEAAAAGAAAABQAAAAQAAAADAAAAAvsAAAAHAAAABwAAAAEAAAACAAAAAwAAAAAAAAAEAAAABQAAAAb8AAAANwAAAAAiADAAOgA6ADoAXwB0AGIAcwBoAGUAbABsAF8AZgBvAHIAbQEA/////wAA///////////8AAAAOQAAAAAkADAAOgA6ADoAXwB0AGIAcwBlAGEAcgBjAGgAXwBmAG8AcgBtAAD/////AAD///////////wAAAA5AAAAACQAMAA6ADoAOgBfAHQAYgB0AGEAZwB3AGkAbgBfAGYAbwByAG0AAP////8AAP///////////AAAADsAAAAAJgAwADoAOgA6AF8AdABiAHQAYQBnAHIAZQBmAHMAXwBmAG8AcgBtAAD/////AAD///////////wAAABNAAAAADgAMAA6ADoAOgBfAHQAYgBtAGUAcwBzAGEAZwBlAHMAXwBiAHIAbwB3AHMAZQByAF8AZgBvAHIAbQAA/////wAA///////////8AAAAPQAAAAAoADAAOgA6ADoAXwB0AGIAdABlAHIAbQBpAG4AYQBsAF8AZgBvAHIAbQAA/////wAA///////////8AAAAPwAAAAAqADAAOgA6ADoAXwB0AGIAbwB1AHQAcAB1AHQAdwBpAG4AXwBmAG8AcgBtAAD/////AAD//////////wAAAADbAAAAAAAAAALbAAAAAAAAAAHbAAAAAAAAAAPbAAAAAAAAAADaAAAAHgAwAC0AMQA3ADcANAAyADEAMQA0ADEAOQAyADEAOQBOAAADgQAAAAAAAAZ9AAADCgAAAAAAAAAAAAAJ/wAABZ8AAAAB6wAAAQgAAAAA+wAAAAIAAAACAAAAAAAAAAH7AAAAAgAAAAIAAAAAAAAAAf0AAACLAAAAABoAOgA6ADoALwB2AEQAbwBjAGsAQQByAGUAYQABAAAC7wAAAAAAAvsAAAABAAAAAQAAAAD7AAAAAQAAAAEAAAAA/AAAAEEBAAAAIAAxADoAOgA6AF8AdABiAGYAaQBuAGQAXwBmAG8AcgBtAAH/////AAAAAALtAAAC4QAAAZ0ZMjCnAAAAAPwAAAApAAAAABwAOgA6ADoATQBEAEkAQQBSAEUAQQBUAEkATABFAAH/////AAAAAAAA2wAAAAAAAAAC2wAAAAAAAAAB2wAAAAAAAAAD2wAAAAAAAAAA"/>
+					<toolbars state="AAAA/wAAAAD9AAAAAAAABsMAAAUDAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAQAFMAdABhAG4AZABhAHIAZAEAAAAA/////wAAAAAAAAAAAAAAHgBDAHUAcgByAGUAbgB0ACAAQwBvAG4AdABlAHgAdAEAAAWd/////wAAAAAAAAAA">
 						<p n="_tbstandard_form" movable="1"/>
+						<p n="_tbcontext_form" movable="1"/>
 					</toolbars>
 				</standard_layout>
 				<app_layout version="1" state="N" fullscreen="0">
@@ -243,7 +250,7 @@
 						<p n="_tbinteractive_form" f="8"/>
 						<p n="_tbmessages_browser_form" f="8"/>
 						<p n="_tbnotification_form" f="36"/>
-						<p n="_tbopen_form" f="44"/>
+						<p n="_tbopen_form" f="40"/>
 						<p n="_tboutputwin_form" f="8"/>
 						<p n="_tbproctree_form" f="8"/>
 						<p n="_tbprojects_form" f="8"/>
@@ -261,14 +268,23 @@
 						<p n="_tbunittest_form" f="0"/>
 					</toolwindowinfo>
 					<toolwindows>
-						<p n="_tbprojects_form" t="1"/>
-						<p n="_tbsearch_form" t="1"/>
+						<p n="_tbcbrowser_form" t="0"/>
+						<p n="_tbclass_form" t="0"/>
+						<p n="_tbmessages_browser_form" t="0"/>
+						<p n="_tbopen_form" t="0"/>
+						<p n="_tboutputwin_form" t="0"/>
+						<p n="_tbproctree_form" t="0"/>
+						<p n="_tbprojects_form" t="0"/>
+						<p n="_tbsearch_form" t="0"/>
 						<p n="_tbshell_form" t="0"/>
-						<p n="_tbtagrefs_form" t="1"/>
+						<p n="_tbtagrefs_form" t="0"/>
+						<p n="_tbtagwin_form" t="0"/>
+						<p n="_tbterminal_form" t="0"/>
 					</toolwindows>
-					<mdistate v="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"/>
-					<toolbars state="AAAA/wAAAAD9AAAAAAAABx4AAAUCAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAQAFMAdABhAG4AZABhAHIAZAEAAAAA/////wAAAAAAAAAA">
+					<mdistate v="AAAAAwAAAAEAAAAC2gAAAAIAMAAAAAAAAABZAAAGwgAABVsAAAAAAAAAAAAACf8AAAWfAAAAAesAAAS6AAAAAPsAAAACAAAAAgAAAAEAAAAA+wAAAAIAAAACAAAAAAAAAAH9AAABoQAAAAAaADoAOgA6AC8AdgBEAG8AYwBrAEEAcgBlAGEBAAAAAT0AAAAAAAL7AAAABQAAAAUAAAAAAAAABAAAAAMAAAACAAAAAfsAAAAFAAAABQAAAAAAAAABAAAAAgAAAAMAAAAE/AAAAD0AAAAAKAAwADoAOgA6AF8AdABiAHAAcgBvAGoAZQBjAHQAcwBfAGYAbwByAG0BAP////8AAP///////////AAAAD0AAAAAKAAwADoAOgA6AF8AdABiAHAAcgBvAGMAdAByAGUAZQBfAGYAbwByAG0AAP////8AAP///////////AAAADcAAAAAIgAwADoAOgA6AF8AdABiAGMAbABhAHMAcwBfAGYAbwByAG0AAP////8AAP///////////AAAAD0AAAAAKAAwADoAOgA6AF8AdABiAGMAYgByAG8AdwBzAGUAcgBfAGYAbwByAG0AAP////8AAP///////////AAAADUAAAAAIAAwADoAOgA6AF8AdABiAG8AcABlAG4AXwBmAG8AcgBtAAD/////AAD///////////0AAALFAAAAABoAOgA6ADoALwB2AEQAbwBjAGsAQQByAGUAYQEAAAAGGAABAAAAAfsAAAACAAAAAgAAAAAAAAAB+wAAAAIAAAACAAAAAQAAAAD8AAAAKQAAAAAcADoAOgA6AE0ARABJAEEAUgBFAEEAVABJAEwARQEAAAADpwAB/QAAAkUAAAAAGgA6ADoAOgAvAHYARABvAGMAawBBAHIAZQBhAQAAAAFXAAAAAAAC+wAAAAcAAAAHAAAAAAAAAAEAAAAGAAAABQAAAAQAAAADAAAAAvsAAAAHAAAABwAAAAEAAAACAAAAAwAAAAAAAAAEAAAABQAAAAb8AAAANwAAAAAiADAAOgA6ADoAXwB0AGIAcwBoAGUAbABsAF8AZgBvAHIAbQEA/////wAA///////////8AAAAOQAAAAAkADAAOgA6ADoAXwB0AGIAcwBlAGEAcgBjAGgAXwBmAG8AcgBtAAD/////AAD///////////wAAAA5AAAAACQAMAA6ADoAOgBfAHQAYgB0AGEAZwB3AGkAbgBfAGYAbwByAG0AAP////8AAP///////////AAAADsAAAAAJgAwADoAOgA6AF8AdABiAHQAYQBnAHIAZQBmAHMAXwBmAG8AcgBtAAD/////AAD///////////wAAABNAAAAADgAMAA6ADoAOgBfAHQAYgBtAGUAcwBzAGEAZwBlAHMAXwBiAHIAbwB3AHMAZQByAF8AZgBvAHIAbQAA/////wAA///////////8AAAAPQAAAAAoADAAOgA6ADoAXwB0AGIAdABlAHIAbQBpAG4AYQBsAF8AZgBvAHIAbQAA/////wAA///////////8AAAAPwAAAAAqADAAOgA6ADoAXwB0AGIAbwB1AHQAcAB1AHQAdwBpAG4AXwBmAG8AcgBtAAD/////AAD//////////wAAAADbAAAAAAAAAALbAAAAAAAAAAHbAAAAAAAAAAPbAAAAAAAAAADaAAAAHgAwAC0AMQA3ADcANAAyADEAMQA0ADEAOQAyADEAOQBOAAADgQAAAAAAAAZ9AAADCgAAAAAAAAAAAAAJ/wAABZ8AAAAB6wAAAQgAAAAA+wAAAAIAAAACAAAAAAAAAAH7AAAAAgAAAAIAAAAAAAAAAf0AAACLAAAAABoAOgA6ADoALwB2AEQAbwBjAGsAQQByAGUAYQABAAAC7wAAAAAAAvsAAAABAAAAAQAAAAD7AAAAAQAAAAEAAAAA/AAAAEEBAAAAIAAxADoAOgA6AF8AdABiAGYAaQBuAGQAXwBmAG8AcgBtAAH/////AAAAAALtAAAC4QAAAZ0ZMjCnAAAAAPwAAAApAAAAABwAOgA6ADoATQBEAEkAQQBSAEUAQQBUAEkATABFAAH/////AAAAAAAA2wAAAAAAAAAC2wAAAAAAAAAB2wAAAAAAAAAD2wAAAAAAAAAA"/>
+					<toolbars state="AAAA/wAAAAD9AAAAAAAABsMAAAUDAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAQAFMAdABhAG4AZABhAHIAZAEAAAAA/////wAAAAAAAAAAAAAAHgBDAHUAcgByAGUAbgB0ACAAQwBvAG4AdABlAHgAdAEAAAWd/////wAAAAAAAAAA">
 						<p n="_tbstandard_form" movable="1"/>
+						<p n="_tbcontext_form" movable="1"/>
 					</toolbars>
 				</app_layout>
 			</monitor_config>
@@ -1057,7 +1073,7 @@
 			</monitor_config>
 			<monitor_config v="0 0 2048 1152">
 				<screen v="2048 1152 602 0 1320 1048 0 0 N 0 0 0 0 1061 677 0"/>
-				<mdistate v="AAAAAwAAAAIAAAAH2gAAAAIAMAAAAAAAAABZAAAHCAAABV0AAAAAAAAAAAAACf8AAAWfAAAAAuoAAADyAAAAAvsAAAACAAAAAgAAAAEAAAAA+wAAAAIAAAACAAAAAQAAAAD8AAAAYwAAAABWADIAOgA6ADoARAA6AFwAUwBvAHUAcgBjAGUAcwBcAEcAaQB0AFAAcgBlAHAAXABHAGkAdABQAHIAZQBwAC4AcAByAGoAXABzAHQAZABhAGYAeAAuAGgAAP////8AAPwAAABfAAAAAFIAMwA6ADoAOgBEADoAXABTAG8AdQByAGMAZQBzAFwATABpAGIAcgBhAHIAeQBcAEwAaQBiAHIAYQByAHkAXABUAEIAQgB1AHQAdABvAG4ALgBoAQD/////AAAAAAAA2gAAAB4AMAAtADEANAAzADMAMQAxADkANwA5ADAAMgA2ADIATgAAAwIAAAFOAAAIAQAAA40AAAAAAAAAAAAACf8AAAWfAAAAAuoAAAAWAAAAAvsAAAAAAAAAAPsAAAAAAAAAAAAAAADaAAAAHgAwAC0AMQA0ADMAMQA1ADYAMQAxADYAOQAxADMAMQBOAAAD8QAAAPoAAAd8AAAEjAAAAAAAAAAAAAAJ/wAABZ8AAAAC6gAAABYAAAAC+wAAAAAAAAAA+wAAAAAAAAAAAAAAANoAAAAeADAALQAxADQANwA3ADIANgAxADEAMQAwADEAMwA2AE4AAAPfAAAAdgAABw8AAANBAAAAAAAAAAAAAAn/AAAFnwAAAALqAAAAFgAAAAL7AAAAAAAAAAD7AAAAAAAAAAAAAAAA2gAAAB4AMAAtADEANQA5ADEANwAzADIANQA3ADcANgAwADgATgAAA/gAAAHmAAAHfgAAAmoAAAAAAAAAAAAACf8AAAWfAAAAAuoAAAAWAAAAAvsAAAAAAAAAAPsAAAAAAAAAAAAAAADaAAAAHgAwAC0AMQA1ADkAMQA3ADMANQA5ADUAMgAwADYANQBOAAAEJAAAABQAAAU6AAAFSgAAAAAAAAAAAAAJ/wAABZ8AAAAC6gAAABYAAAAC+wAAAAAAAAAA+wAAAAAAAAAAAAAAANoAAAAeADEALQAxADQAMwAxADUAOAA1ADQAMQA0ADMANgA3AE4AAAHgAAABRAAABt8AAAODAAAAAAAAAAAAAAn/AAAFnwAAAALqAAAAFgAAAAL7AAAAAAAAAAD7AAAAAAAAAAAAAAAA"/>
+				<mdistate v="AAAAAwAAAAIAAAAC2gAAAAIAMAAAAAAAAABZAAAGwgAABVsAAAAAAAAAAAAACf8AAAWfAAAAAuoAAAQmAAAAAvsAAAAJAAAACQAAAAIAAAAAAAAAAQAAAAYAAAAFAAAABwAAAAMAAAAEAAAACPsAAAAJAAAACQAAAAUAAAAGAAAABwAAAAAAAAABAAAABAAAAAgAAAACAAAAA/wAAABpAAAAAFwANwA6ADoAOgBEADoAXABTAG8AdQByAGMAZQBzAFwARwBpAHQAUAByAGUAcABcAEcAaQB0AFAAcgBlAHAALgBwAHIAagBcAEUAeABwAGwAbwByAGUALgBjAHAAcAAA/////wAA/AAAAGUAAAAAWAA2ADoAOgA6AEQAOgBcAFMAbwB1AHIAYwBlAHMAXABHAGkAdABQAHIAZQBwAFwARwBpAHQAUAByAGUAcAAuAHAAcgBqAFwARQB4AHAAbABvAHIAZQAuAGgAAP////8AAPwAAABnAAAAAFoAMwA6ADoAOgBEADoAXABTAG8AdQByAGMAZQBzAFwARwBpAHQAUAByAGUAcABcAEcAaQB0AFAAcgBlAHAALgBwAHIAagBcAEcAaQB0AFAAcgBlAHAALgByAGMBAP////8AAPwAAABvAAAAAGIAMgA6ADoAOgBEADoAXABTAG8AdQByAGMAZQBzAFwARwBpAHQAUAByAGUAcABcAEcAaQB0AFAAcgBlAHAALgBwAHIAagBcAEcAaQB0AFAAcgBlAHAARABvAGMALgBjAHAAcAAA/////wAA/AAAAGsAAAAAXgA1ADoAOgA6AEQAOgBcAFMAbwB1AHIAYwBlAHMAXABHAGkAdABQAHIAZQBwAFwARwBpAHQAUAByAGUAcAAuAHAAcgBqAFwARwBpAHQAUAByAGUAcABEAG8AYwAuAGgAAP////8AAPwAAABvAAAAAGIAMQAxADoAOgA6AEQAOgBcAFMAbwB1AHIAYwBlAHMAXABHAGkAdABQAHIAZQBwAFwARwBpAHQAUAByAGUAcAAuAHAAcgBqAFwATQBhAGkAbgBGAHIAYQBtAGUALgBjAHAAcAAA/////wAA/AAAAGkAAAAAXAA5ADoAOgA6AEQAOgBcAFMAbwB1AHIAYwBlAHMAXABHAGkAdABQAHIAZQBwAFwARwBpAHQAUAByAGUAcAAuAHAAcgBqAFwATQB5AFQAbwBvAGwAQgBhAHIALgBoAAD/////AAD8AAAATQAAAABAADgAOgA6ADoARAA6AFwAUwBvAHUAcgBjAGUAcwBcAEcAaQB0AFAAcgBlAHAAXABSAEUAQQBEAE0ARQAuAG0AZAAA/////wAA/AAAAGcAAAAAWgA0ADoAOgA6AEQAOgBcAFMAbwB1AHIAYwBlAHMAXABHAGkAdABQAHIAZQBwAFwARwBpAHQAUAByAGUAcAAuAHAAcgBqAFwAUgBlAHMAbwB1AHIAYwBlAC4AaAAA/////wAAAAAAANoAAAAeADAALQAxADcANwA0ADIAMQAxADQAMQA5ADIAMQA5AE4AAAOBAAAAAAAABn0AAAOSAAAAAAAAAAAAAAn/AAAFnwAAAALqAAAAFgAAAAL7AAAAAAAAAAD7AAAAAAAAAAAAAAAA"/>
 				<fullscreen_layout version="1" state="N" fullscreen="0">
 					<toolwindowinfo>
 						<p n="_tbannotations_browser_form" f="0"/>
@@ -1310,72 +1326,104 @@
 			</monitor_config>
 		</monitor_configs>
 		<cwd v="..\GitPrep.prj"/>
-		<buffer bn="..\GitPrep.prj\stdafx.h" dn="" mtn="">
+		<buffer bn="..\GitPrep.prj\GitPrepDoc.h" dn="" mtn="">
 			<bi ma="1 110 1" tabs="" wws="1" iwt="" st="8" in="1" bw="0" us="32000" ro="0" se="1" sn="0" bin="0" mn="" hm="0" mf="0" tl="0" mll="0" ase="0" lnl="1" lcf="0" caps="0" e="0" esbu2="-1" clb="" clm="" sc="" sce="" scu="" alm="0" fwrm="0" hmre="0" hmrbw="0" spcwt="" swf="" sm="" ldf="42" stat="" bfont="" mfont="" df="1024" sco="" of=""/>
-			<view ln=".0" cl="1" le="0" cx="2" cy="0" wi="5" bi="1" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+			<view ln=".911" cl="20" le="0" cx="19" cy="18" wi="5" bi="4" ht="0" hn="0" hf="0" hc="4" hb="4"/>
 		</buffer>
-		<buffer bn="..\..\Library\Library\TBButton.h" dn="" mtn="">
-			<bi ma="1 110 1" tabs="" wws="1" iwt="" st="8" in="1" bw="0" us="32000" ro="0" se="1" sn="0" bin="0" mn="" hm="0" mf="86048864" tl="0" mll="0" ase="0" lnl="1" lcf="0" caps="0" e="0" esbu2="-1" clb="" clm="" sc="" sce="" scu="" alm="0" fwrm="0" hmre="0" hmrbw="0" spcwt="" swf="" sm="" ldf="42" stat="" bfont="" mfont="" df="1024" sco="" of=""/>
-			<view ln=".134" cl="23" le="0" cx="24" cy="12" wi="5" bi="2" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		<buffer bn="..\GitPrep.prj\Resource.h" dn="" mtn="">
+			<bi ma="1 110 1" tabs="" wws="1" iwt="" st="8" in="1" bw="0" us="32000" ro="0" se="1" sn="0" bin="0" mn="" hm="0" mf="0" tl="0" mll="0" ase="0" lnl="1" lcf="0" caps="0" e="0" esbu2="-1" clb="" clm="" sc="" sce="" scu="" alm="0" fwrm="0" hmre="0" hmrbw="0" spcwt="" swf="" sm="" ldf="42" stat="" bfont="" mfont="" df="1024" sco="" of=""/>
+			<view ln=".475" cl="19" le="0" cx="18" cy="15" wi="5" bi="7" ht="0" hn="0" hf="0" hc="4" hb="4"/>
 		</buffer>
-		<buffer bn="..\GitPrep.prj\GitPrep.rc" dn="" mtn="">
-			<bi ma="1 74 1" tabs="2 " wws="1" iwt="" st="0" in="1" bw="0" us="32000" ro="0" se="1" sn="0" bin="0" mn="" hm="0" mf="84934688" tl="0" mll="0" ase="0" lnl="1" lcf="0" caps="0" e="73" esbu2="-1" clb="" clm="" sc="" sce="" scu="" alm="0" fwrm="0" hmre="0" hmrbw="0" spcwt="" swf="" sm="" ldf="42" stat="" bfont="" mfont="" df="0" sco="" of=""/>
-			<view ln=".5339" cl="43" le="0" cx="44" cy="27" wi="5" bi="3" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		<buffer bn="..\GitPrep.prj\GitPrepDoc.cpp" dn="" mtn="">
+			<bi ma="1 110 1" tabs="" wws="1" iwt="" st="8" in="1" bw="0" us="32000" ro="0" se="1" sn="0" bin="0" mn="" hm="0" mf="0" tl="0" mll="0" ase="0" lnl="1" lcf="0" caps="0" e="0" esbu2="-1" clb="" clm="" sc="" sce="" scu="" alm="0" fwrm="0" hmre="0" hmrbw="0" spcwt="" swf="" sm="" ldf="42" stat="" bfont="" mfont="" df="1024" sco="" of=""/>
+			<view ln=".1701" cl="7" le="0" cx="6" cy="28" wi="5" bi="5" ht="0" hn="0" hf="0" hc="4" hb="4"/>
 		</buffer>
 		<buffer bn="..\README.md" dn="" mtn="">
-			<bi ma="1 74 1" tabs="2 " wws="1" iwt="" st="8" in="2" bw="0" us="32000" ro="0" se="1" sn="0" bin="0" mn="" hm="0" mf="87031840" tl="0" mll="0" ase="0" lnl="1" lcf="0" caps="0" e="0" esbu2="-1" clb="" clm="" sc="" sce="" scu="" alm="0" fwrm="0" hmre="0" hmrbw="0" spcwt="" swf="2" sm="" ldf="42" stat="" bfont="" mfont="" df="0" sco="" of=""/>
-			<view ln=".1917" cl="1" le="0" cx="2" cy="22" wi="5" bi="4" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+			<bi ma="1 74 1" tabs="2 " wws="1" iwt="" st="8" in="2" bw="0" us="32000" ro="0" se="1" sn="0" bin="0" mn="" hm="0" mf="85983776" tl="0" mll="0" ase="0" lnl="1" lcf="0" caps="0" e="0" esbu2="-1" clb="" clm="" sc="" sce="" scu="" alm="0" fwrm="0" hmre="0" hmrbw="0" spcwt="" swf="2" sm="" ldf="42" stat="" bfont="" mfont="" df="1024" sco="" of=""/>
+			<view ln=".1864" cl="1" le="0" cx="0" cy="18" wi="5" bi="6" ht="0" hn="0" hf="0" hc="4" hb="4"/>
 		</buffer>
-		<buffer bn="..\GitPrep.x64.wix\Product.wxs" dn="" mtn="">
-			<bi ma="1 110 1" tabs="" wws="1" iwt="" st="0" in="2" bw="0" us="32000" ro="0" se="1" sn="0" bin="0" mn="" hm="0" mf="85983264" tl="0" mll="0" ase="0" lnl="1" lcf="0" caps="0" e="70" esbu2="-1" clb="" clm="" sc="" sce="" scu="" alm="0" fwrm="0" hmre="0" hmrbw="0" spcwt="" swf="" sm="" ldf="42" stat="" bfont="" mfont="" df="0" sco="" of=""/>
-			<view ln=".54" cl="52" le="0" cx="53" cy="2" wi="5" bi="6" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		<buffer bn="..\GitPrep.prj\MainFrame.cpp" dn="" mtn="">
+			<bi ma="1 110 1" tabs="" wws="1" iwt="" st="8" in="1" bw="0" us="32000" ro="0" se="1" sn="0" bin="0" mn="" hm="0" mf="86049376" tl="0" mll="0" ase="0" lnl="1" lcf="0" caps="0" e="0" esbu2="-1" clb="" clm="" sc="" sce="" scu="" alm="0" fwrm="0" hmre="0" hmrbw="0" spcwt="" swf="" sm="" ldf="42" stat="" bfont="" mfont="" df="1024" sco="" of=""/>
+			<view ln=".561" cl="6" le="0" cx="5" cy="29" wi="5" bi="3" ht="0" hn="0" hf="0" hc="4" hb="4"/>
 		</buffer>
-		<buffer bn="..\..\AddrBookMerge\README.md" dn="" mtn="">
-			<bi ma="1 74 1" tabs="2 " wws="1" iwt="" st="8" in="2" bw="0" us="32000" ro="0" se="1" sn="0" bin="0" mn="" hm="0" mf="87031840" tl="0" mll="0" ase="0" lnl="1" lcf="0" caps="0" e="0" esbu2="-1" clb="" clm="" sc="" sce="" scu="" alm="0" fwrm="0" hmre="0" hmrbw="0" spcwt="" swf="2" sm="" ldf="42" stat="" bfont="" mfont="" df="0" sco="" of=""/>
-			<view ln=".0" cl="1" le="0" cx="2" cy="0" wi="5" bi="5" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		<buffer bn="..\GitPrep.prj\MainFrame.h" dn="" mtn="">
+			<bi ma="1 110 1" tabs="" wws="1" iwt="" st="8" in="1" bw="0" us="32000" ro="0" se="1" sn="0" bin="0" mn="" hm="0" mf="86049504" tl="0" mll="0" ase="0" lnl="1" lcf="0" caps="0" e="0" esbu2="-1" clb="" clm="" sc="" sce="" scu="" alm="0" fwrm="0" hmre="0" hmrbw="0" spcwt="" swf="" sm="" ldf="42" stat="" bfont="" mfont="" df="0" sco="" of=""/>
+			<view ln=".204" cl="5" le="0" cx="4" cy="5" wi="5" bi="10" ht="0" hn="0" hf="0" hc="4" hb="4"/>
 		</buffer>
-		<window x="1" y="31" width="1555" height="878" icon_x="0" icon_y="0" state="N" wf="0" wt="2" font_info=",,," did="0" mi="*,,," pi="0">
-			<buffer bn="..\GitPrep.prj\stdafx.h" dn="" mtn=""/>
-			<view ln=".0" cl="1" le="0" cx="2" cy="0" wi="130" bi="1" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		<buffer bn="..\GitPrep.prj\MyToolBar.h" dn="" mtn="">
+			<bi ma="1 110 1" tabs="" wws="1" iwt="" st="8" in="1" bw="0" us="32000" ro="0" se="1" sn="0" bin="0" mn="" hm="0" mf="87032416" tl="0" mll="0" ase="0" lnl="1" lcf="0" caps="0" e="0" esbu2="-1" clb="" clm="" sc="" sce="" scu="" alm="0" fwrm="0" hmre="0" hmrbw="0" spcwt="" swf="" sm="" ldf="42" stat="" bfont="" mfont="" df="1024" sco="" of=""/>
+			<view ln=".152" cl="42" le="0" cx="41" cy="12" wi="5" bi="2" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		</buffer>
+		<buffer bn="..\GitPrep.prj\Explore.h" dn="" mtn="">
+			<bi ma="1 110 1" tabs="" wws="1" iwt="" st="8" in="1" bw="0" us="32000" ro="0" se="1" sn="0" bin="0" mn="" hm="0" mf="0" tl="0" mll="0" ase="0" lnl="1" lcf="0" caps="0" e="0" esbu2="-1" clb="" clm="" sc="" sce="" scu="" alm="0" fwrm="0" hmre="0" hmrbw="0" spcwt="" swf="" sm="" ldf="42" stat="" bfont="" mfont="" df="1024" sco="" of=""/>
+			<view ln=".1033" cl="1" le="0" cx="0" cy="21" wi="5" bi="9" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		</buffer>
+		<buffer bn="..\GitPrep.prj\Explore.cpp" dn="" mtn="">
+			<bi ma="1 110 1" tabs="" wws="1" iwt="" st="8" in="1" bw="0" us="32000" ro="0" se="1" sn="0" bin="0" mn="" hm="0" mf="0" tl="0" mll="0" ase="0" lnl="1" lcf="0" caps="0" e="0" esbu2="-1" clb="" clm="" sc="" sce="" scu="" alm="0" fwrm="0" hmre="0" hmrbw="0" spcwt="" swf="" sm="" ldf="42" stat="" bfont="" mfont="" df="1024" sco="" of=""/>
+			<view ln=".4102" cl="1" le="0" cx="0" cy="20" wi="5" bi="8" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		</buffer>
+		<buffer bn="..\GitPrep.prj\GitPrep.rc" dn="" mtn="">
+			<bi ma="1 74 1" tabs="2 " wws="1" iwt="" st="0" in="1" bw="0" us="32000" ro="0" se="1" sn="0" bin="0" mn="" hm="0" mf="83886624" tl="0" mll="0" ase="0" lnl="1" lcf="0" caps="0" e="73" esbu2="-1" clb="" clm="" sc="" sce="" scu="" alm="0" fwrm="0" hmre="0" hmrbw="0" spcwt="" swf="" sm="" ldf="42" stat="" bfont="" mfont="" df="1024" sco="" of=""/>
+			<view ln=".5339" cl="43" le="0" cx="42" cy="27" wi="5" bi="1" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		</buffer>
+		<window x="1" y="1" width="1405" height="901" icon_x="0" icon_y="0" state="N" wf="0" wt="5" font_info=",,," did="0" mi="*,,," pi="3">
+			<buffer bn="..\GitPrep.prj\GitPrepDoc.h" dn="" mtn=""/>
+			<view ln=".911" cl="20" le="0" cx="19" cy="18" wi="13" bi="4" ht="0" hn="0" hf="0" hc="4" hb="4"/>
 		</window>
-		<window x="1" y="31" width="1555" height="878" icon_x="0" icon_y="0" state="N" wf="0" wt="3" font_info=",,," did="0" mi="*,,," pi="0">
-			<buffer bn="..\..\Library\Library\TBButton.h" dn="" mtn=""/>
-			<view ln=".134" cl="23" le="0" cx="24" cy="12" wi="129" bi="2" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		<window x="1" y="1" width="1406" height="902" icon_x="0" icon_y="0" state="N" wf="0" wt="2" font_info=",,," did="0" mi="*,,," pi="2">
+			<buffer bn="..\GitPrep.prj\GitPrepDoc.cpp" dn="" mtn=""/>
+			<view ln=".1701" cl="7" le="0" cx="6" cy="28" wi="19" bi="5" ht="0" hn="0" hf="0" hc="4" hb="4"/>
 		</window>
-		<window x="1" y="31" width="1555" height="878" icon_x="0" icon_y="0" state="N" wf="0" wt="4" font_info="Consolas,12,0,1" did="0" mi="*,,," pi="0">
+		<window x="1" y="1" width="1406" height="902" icon_x="0" icon_y="0" state="N" wf="0" wt="6" font_info=",,," did="0" mi="*,,," pi="4">
+			<buffer bn="..\GitPrep.prj\Explore.h" dn="" mtn=""/>
+			<view ln=".1033" cl="1" le="0" cx="0" cy="21" wi="31" bi="9" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		</window>
+		<window x="1" y="1" width="1406" height="902" icon_x="0" icon_y="0" state="N" wf="0" wt="7" font_info=",,," did="0" mi="*,,," pi="1">
+			<buffer bn="..\GitPrep.prj\Explore.cpp" dn="" mtn=""/>
+			<view ln=".4102" cl="1" le="0" cx="0" cy="20" wi="34" bi="8" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		</window>
+		<window x="1" y="1" width="1405" height="901" icon_x="0" icon_y="0" state="N" wf="0" wt="4" font_info=",,," did="0" mi="*,,," pi="0">
+			<buffer bn="..\GitPrep.prj\Resource.h" dn="" mtn=""/>
+			<view ln=".475" cl="19" le="0" cx="18" cy="15" wi="16" bi="7" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		</window>
+		<window x="1" y="31" width="1406" height="902" icon_x="0" icon_y="0" state="N" wf="0" wt="11" font_info=",,," did="0" mi="*,,," pi="1">
+			<buffer bn="..\GitPrep.prj\MainFrame.cpp" dn="" mtn=""/>
+			<view ln=".561" cl="6" le="0" cx="6" cy="29" wi="25" bi="3" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		</window>
+		<window x="1" y="31" width="1406" height="902" icon_x="0" icon_y="0" state="N" wf="0" wt="10" font_info=",,," did="0" mi="*,,," pi="2">
+			<buffer bn="..\GitPrep.prj\MainFrame.h" dn="" mtn=""/>
+			<view ln=".204" cl="5" le="0" cx="5" cy="5" wi="243" bi="10" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		</window>
+		<window x="1" y="31" width="1406" height="902" icon_x="0" icon_y="0" state="N" wf="0" wt="9" font_info=",,," did="0" mi="*,,," pi="1">
+			<buffer bn="..\GitPrep.prj\MyToolBar.h" dn="" mtn=""/>
+			<view ln=".152" cl="42" le="0" cx="42" cy="12" wi="28" bi="2" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+		</window>
+		<window x="1" y="31" width="1406" height="902" icon_x="0" icon_y="0" state="N" wf="0" wt="3" font_info="Consolas,12,0,1" did="0" mi="*,,," pi="1">
 			<buffer bn="..\GitPrep.prj\GitPrep.rc" dn="" mtn=""/>
-			<view ln=".5339" cl="43" le="0" cx="44" cy="27" wi="152" bi="3" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+			<view ln=".5339" cl="43" le="0" cx="43" cy="27" wi="37" bi="1" ht="0" hn="0" hf="0" hc="4" hb="4"/>
 		</window>
-		<window x="1" y="31" width="1555" height="878" icon_x="0" icon_y="0" state="N" wf="0" wt="6" font_info=",,," did="0" mi="*,,," pi="0">
-			<buffer bn="..\..\AddrBookMerge\README.md" dn="" mtn=""/>
-			<view ln=".4143" cl="1" le="0" cx="2" cy="18" wi="162" bi="5" ht="0" hn="0" hf="0" hc="4" hb="4"/>
-		</window>
-		<window x="1" y="31" width="1555" height="878" icon_x="0" icon_y="0" state="N" wf="0" wt="5" font_info=",,," did="0" mi="*,,," pi="0">
+		<window x="1" y="31" width="1406" height="902" icon_x="0" icon_y="0" state="N" wf="0" wt="8" font_info=",,," did="0" mi="*,,," pi="0">
 			<buffer bn="..\README.md" dn="" mtn=""/>
-			<view ln=".1917" cl="1" le="0" cx="2" cy="22" wi="149" bi="4" ht="0" hn="0" hf="0" hc="4" hb="4"/>
+			<view ln=".1864" cl="1" le="0" cx="1" cy="18" wi="22" bi="6" ht="0" hn="0" hf="0" hc="4" hb="4"/>
 		</window>
-		<window x="0" y="0" width="1557" height="910" icon_x="0" icon_y="0" state="M" wf="0" wt="7" font_info="Consolas,12,0,1" did="0" mi="*,,," pi="0">
-			<buffer bn="..\GitPrep.x64.wix\Product.wxs" dn="" mtn=""/>
-			<view ln=".108" cl="13" le="0" cx="13" cy="3" wi="21" bi="6" ht="0" hn="0" hf="0" hc="4" hb="4"/>
-		</window>
-		<mdistate v="AAAAAwAAAAIAAAAH2gAAAAIAMAAAAAAAAABZAAAHHQAABVoAAAAAAAAAAAAACf8AAAWfAAAAAuoAAAKkAAAAAvsAAAAGAAAABgAAAAEAAAADAAAAAgAAAAAAAAAFAAAABPsAAAAGAAAABgAAAAEAAAACAAAAAwAAAAAAAAAFAAAABPwAAABnAAAAAFoANAA6ADoAOgBEADoAXABTAG8AdQByAGMAZQBzAFwARwBpAHQAUAByAGUAcABcAEcAaQB0AFAAcgBlAHAALgBwAHIAagBcAEcAaQB0AFAAcgBlAHAALgByAGMAAP////8AAPwAAABxAAAAAGQANwA6ADoAOgBEADoAXABTAG8AdQByAGMAZQBzAFwARwBpAHQAUAByAGUAcABcAEcAaQB0AFAAcgBlAHAALgB4ADYANAAuAHcAaQB4AFwAUAByAG8AZAB1AGMAdAAuAHcAeABzAQD/////AQH8AAAAWQAAAABMADYAOgA6ADoARAA6AFwAUwBvAHUAcgBjAGUAcwBcAEEAZABkAHIAQgBvAG8AawBNAGUAcgBnAGUAXABSAEUAQQBEAE0ARQAuAG0AZAAA/////wAA/AAAAE0AAAAAQAA1ADoAOgA6AEQAOgBcAFMAbwB1AHIAYwBlAHMAXABHAGkAdABQAHIAZQBwAFwAUgBFAEEARABNAEUALgBtAGQAAP////8AAPwAAABjAAAAAFYAMgA6ADoAOgBEADoAXABTAG8AdQByAGMAZQBzAFwARwBpAHQAUAByAGUAcABcAEcAaQB0AFAAcgBlAHAALgBwAHIAagBcAHMAdABkAGEAZgB4AC4AaAAA/////wAA/AAAAF8AAAAAUgAzADoAOgA6AEQAOgBcAFMAbwB1AHIAYwBlAHMAXABMAGkAYgByAGEAcgB5AFwATABpAGIAcgBhAHIAeQBcAFQAQgBCAHUAdAB0AG8AbgAuAGgAAP////8AAAAAAADaAAAAHgAwAC0AMQA0ADMAMwAxADEAOQA3ADkAMAAyADYAMgBOAAADAgAAAU4AAAgBAAADjQAAAAAAAAAAAAAJ/wAABZ8AAAAC6gAAABYAAAAC+wAAAAAAAAAA+wAAAAAAAAAAAAAAANoAAAAeADAALQAxADQAMwAxADUANgAxADEANgA5ADEAMwAxAE4AAAPxAAAA+gAAB3wAAASMAAAAAAAAAAAAAAn/AAAFnwAAAALqAAAAFgAAAAL7AAAAAAAAAAD7AAAAAAAAAAAAAAAA2gAAAB4AMAAtADEANAA3ADcAMgA2ADEAMQAxADAAMQAzADYATgAAA98AAAB2AAAHDwAAA0EAAAAAAAAAAAAACf8AAAWfAAAAAuoAAAAWAAAAAvsAAAAAAAAAAPsAAAAAAAAAAAAAAADaAAAAHgAwAC0AMQA1ADkAMQA3ADMAMgA1ADcANwA2ADAAOABOAAAD+AAAAeYAAAd+AAACagAAAAAAAAAAAAAJ/wAABZ8AAAAC6gAAABYAAAAC+wAAAAAAAAAA+wAAAAAAAAAAAAAAANoAAAAeADAALQAxADUAOQAxADcAMwA1ADkANQAyADAANgA1AE4AAAQkAAAAFAAABToAAAVKAAAAAAAAAAAAAAn/AAAFnwAAAALqAAAAFgAAAAL7AAAAAAAAAAD7AAAAAAAAAAAAAAAA2gAAAB4AMQAtADEANAAzADEANQA4ADUANAAxADQAMwA2ADcATgAAAeAAAAFEAAAG3wAAA4MAAAAAAAAAAAAACf8AAAWfAAAAAuoAAAAWAAAAAvsAAAAAAAAAAPsAAAAAAAAAAAAAAAA="/>
+		<mdistate v="AAAAAwAAAAIAAAAC2gAAAAIAMAAAAAAAAABZAAAGwgAABVsAAAAAAAAAAAAACf8AAAWfAAAAAuoAAASeAAAAAvsAAAAKAAAACgAAAAgAAAACAAAABwAAAAYAAAAFAAAAAAAAAAEAAAADAAAABAAAAAn7AAAACgAAAAoAAAAGAAAABQAAAAcAAAAIAAAAAAAAAAEAAAAEAAAACQAAAAIAAAAD/AAAAGkAAAAAXAA3ADoAOgA6AEQAOgBcAFMAbwB1AHIAYwBlAHMAXABHAGkAdABQAHIAZQBwAFwARwBpAHQAUAByAGUAcAAuAHAAcgBqAFwARQB4AHAAbABvAHIAZQAuAGMAcABwAAD/////AAD8AAAAZQAAAABYADYAOgA6ADoARAA6AFwAUwBvAHUAcgBjAGUAcwBcAEcAaQB0AFAAcgBlAHAAXABHAGkAdABQAHIAZQBwAC4AcAByAGoAXABFAHgAcABsAG8AcgBlAC4AaAAA/////wAA/AAAAGcAAAAAWgAzADoAOgA6AEQAOgBcAFMAbwB1AHIAYwBlAHMAXABHAGkAdABQAHIAZQBwAFwARwBpAHQAUAByAGUAcAAuAHAAcgBqAFwARwBpAHQAUAByAGUAcAAuAHIAYwAA/////wAA/AAAAG8AAAAAYgAyADoAOgA6AEQAOgBcAFMAbwB1AHIAYwBlAHMAXABHAGkAdABQAHIAZQBwAFwARwBpAHQAUAByAGUAcAAuAHAAcgBqAFwARwBpAHQAUAByAGUAcABEAG8AYwAuAGMAcABwAAD/////AAD8AAAAawAAAABeADUAOgA6ADoARAA6AFwAUwBvAHUAcgBjAGUAcwBcAEcAaQB0AFAAcgBlAHAAXABHAGkAdABQAHIAZQBwAC4AcAByAGoAXABHAGkAdABQAHIAZQBwAEQAbwBjAC4AaAAA/////wAA/AAAAG8AAAAAYgAxADEAOgA6ADoARAA6AFwAUwBvAHUAcgBjAGUAcwBcAEcAaQB0AFAAcgBlAHAAXABHAGkAdABQAHIAZQBwAC4AcAByAGoAXABNAGEAaQBuAEYAcgBhAG0AZQAuAGMAcABwAAD/////AAD8AAAAawAAAABeADEAMAA6ADoAOgBEADoAXABTAG8AdQByAGMAZQBzAFwARwBpAHQAUAByAGUAcABcAEcAaQB0AFAAcgBlAHAALgBwAHIAagBcAE0AYQBpAG4ARgByAGEAbQBlAC4AaAAA/////wAA/AAAAGkAAAAAXAA5ADoAOgA6AEQAOgBcAFMAbwB1AHIAYwBlAHMAXABHAGkAdABQAHIAZQBwAFwARwBpAHQAUAByAGUAcAAuAHAAcgBqAFwATQB5AFQAbwBvAGwAQgBhAHIALgBoAAD/////AAD8AAAATQAAAABAADgAOgA6ADoARAA6AFwAUwBvAHUAcgBjAGUAcwBcAEcAaQB0AFAAcgBlAHAAXABSAEUAQQBEAE0ARQAuAG0AZAEA/////wAB/AAAAGcAAAAAWgA0ADoAOgA6AEQAOgBcAFMAbwB1AHIAYwBlAHMAXABHAGkAdABQAHIAZQBwAFwARwBpAHQAUAByAGUAcAAuAHAAcgBqAFwAUgBlAHMAbwB1AHIAYwBlAC4AaAAA/////wAAAAAAANoAAAAeADAALQAxADcANwA0ADIAMQAxADQAMQA5ADIAMQA5AE4AAAOBAAAAAAAABn0AAAMKAAAAAAAAAAAAAAn/AAAFnwAAAALqAAAAFgAAAAL7AAAAAAAAAAD7AAAAAAAAAAAAAAAA"/>
 		<filehist>
 			<p n="..\GitPrep.prj\GitPrepDoc.cpp"/>
-			<p n="..\GitPrep.prj\Explore.cpp"/>
-			<p n="..\GitPrep.hlp\makefile"/>
-			<p n="..\GitPrep.prj\stdafx.h"/>
-			<p n="..\..\Library\Library\TBButton.h"/>
-			<p n="..\GitPrep.prj\GitPrep.rc"/>
-			<p n="..\..\AddrBookMerge\README.md"/>
 			<p n="..\README.md"/>
-			<p n="..\GitPrep.x64.wix\Product.wxs"/>
+			<p n="..\GitPrep.prj\MyToolBar.cpp"/>
+			<p n="..\GitPrep.prj\Explore.cpp"/>
+			<p n="..\GitPrep.prj\Explore.h"/>
+			<p n="..\GitPrep.prj\MainFrame.cpp"/>
+			<p n="..\GitPrep.prj\MainFrame.h"/>
+			<p n="..\GitPrep.prj\MyToolBar.h"/>
+			<p n="..\GitPrep.prj\GitPrep.rc"/>
 		</filehist>
 		<allfilehist>
 			<p n="..\README.md"/>
 			<p n="..\..\AddrBookMerge\README.md"/>
 			<p n="..\GitPrep.x64.wix\Product.wxs"/>
+			<p n="..\GitPrep.prj\MyToolBar.h"/>
 			<p n="..\GitPrep.prj\MyToolBar.cpp"/>
-			<p n="..\GitPrep.hlp\makefile"/>
 			<p n="..\GitPrep.prj\MainFrame.h"/>
 			<p n="..\GitPrep.prj\MainFrame.cpp"/>
 			<p n="..\..\Library\DocView\LibGlobals.h"/>

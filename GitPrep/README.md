@@ -43,6 +43,14 @@ will demonstrate that the upload will work.  Start over to upload to Git.
 
 ## Update
 
+### Update 3/22/26
+
+Add logic to reduce redundant files in openssl folders.
+
+### Update 3/18/26
+
+Leave obj directory in build.
+
 ### Update 3/13/26
 
 Added x64 platform.  Lots of changes in the library.
